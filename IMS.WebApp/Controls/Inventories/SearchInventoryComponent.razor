@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Components.Web      
+@* In Search Term : @searchTerm element is working because of the above using. *@
+
+@* Search Box Component *@
+<div class="input-group">
+    <input type="text" class="form-control" placeholder="Search Inventory Name"
+           @bind-value="@inventoryNameToSearch" @bind-value:event="oninput" />
+    <button type="button" class="btn-success input-group-text" @onclick="OnSearch">Search</button>
+</div>
+
+@inventoryNameToSearch<br/>
+
+
+@code {
+    private string inventoryNameToSearch = string.Empty;
+
+    [Parameter] // Explain with ChatGPT
+    public EventCallback<string> OnSearchInventory { get; set; }
+
+    private void OnSearch() // Event Handler
+    {
+        OnSearchInventory.InvokeAsync(inventoryNameToSearch);
+    }
+
+}

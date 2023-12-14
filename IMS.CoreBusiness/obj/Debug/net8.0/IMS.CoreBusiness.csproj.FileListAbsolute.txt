@@ -1,0 +1,11 @@
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\bin\Debug\net8.0\IMS.CoreBusiness.deps.json
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\bin\Debug\net8.0\IMS.CoreBusiness.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.AssemblyInfoInputs.cache
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.AssemblyInfo.cs
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.csproj.CoreCompileInputs.cache
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\obj\Debug\net8.0\refint\IMS.CoreBusiness.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.CoreBusiness\obj\Debug\net8.0\ref\IMS.CoreBusiness.dll
