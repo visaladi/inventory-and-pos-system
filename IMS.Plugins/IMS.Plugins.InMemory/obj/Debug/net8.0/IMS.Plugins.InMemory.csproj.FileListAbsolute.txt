@@ -1,0 +1,17 @@
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.csproj.AssemblyReference.cache
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.AssemblyInfoInputs.cache
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.AssemblyInfo.cs
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.csproj.CoreCompileInputs.cache
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.deps.json
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.CoreBusiness.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.UseCases.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.UseCases.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.csproj.CopyComplete
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\refint\IMS.Plugins.InMemory.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\ref\IMS.Plugins.InMemory.dll
