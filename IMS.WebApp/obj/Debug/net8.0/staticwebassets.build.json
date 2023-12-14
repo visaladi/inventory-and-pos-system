@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "M3+uchyDY+3FKe6VWrOqHLayZiaq7EYjdB0Cmr0qjkA=",
+  "Hash": "zreI8o1tInUSU8ml3+znlq8YLBU8wOoB5cb9qpc9n+I=",
   "Source": "IMS.WebApp",
   "BasePath": "_content/IMS.WebApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "IMS.WebApp\\wwwroot",
       "Source": "IMS.WebApp",
-      "ContentRoot": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IMS.WebApp.styles.css",
+      "Identity": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IMS.WebApp.styles.css",
       "SourceId": "IMS.WebApp",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "IMS.WebApp.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IMS.WebApp.styles.css"
+      "OriginalItemSpec": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IMS.WebApp.styles.css"
     },
     {
-      "Identity": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css",
+      "Identity": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css",
       "SourceId": "IMS.WebApp",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "IMS.WebApp.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css"
     },
     {
-      "Identity": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\app.css",
+      "Identity": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\app.css",
       "SourceId": "IMS.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "IMS.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "IMS.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\favicon.png",
+      "Identity": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\favicon.png",
       "SourceId": "IMS.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

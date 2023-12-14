@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {}
+    "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {}
   },
   "projects": {
-    "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {
+    "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
+        "projectUniqueName": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
         "projectName": "IMS.CoreBusiness",
-        "projectPath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.CoreBusiness\\obj\\",
+        "projectPath": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
+        "packagesPath": "C:\\Users\\Jayaweera\\.nuget\\packages\\",
+        "outputPath": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.CoreBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jayaweera\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

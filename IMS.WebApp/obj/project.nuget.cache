@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lu/uNGgCMcRpUleLeTwzJuOfEkDSMjA6pkeDN6+WxKJglVzbPTFpWwEqu8Y67rm457anp2DVKvpsQsTdv3yCqQ==",
+  "dgSpecHash": "rx00DimiASyaGEHCLm7WMy9RMASO6q7TjEkfwjyHNBH4ySPunfX6MnB1q15vOHOSWDBACw+AR/N/o4BEhhGPkg==",
   "success": true,
-  "projectFilePath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.WebApp\\IMS.WebApp.csproj",
+  "projectFilePath": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\IMS.WebApp.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
