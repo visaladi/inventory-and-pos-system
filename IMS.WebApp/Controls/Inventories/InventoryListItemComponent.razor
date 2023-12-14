@@ -13,7 +13,6 @@
             <td>@inv.Price</td>
             
             <td>
-                
                 <button type="button" class="btn btn-dark" onclick="@(()=> EditInventory(inv.InventoryID))">Edit</button>
             </td>
 
@@ -31,7 +30,7 @@ else
 
     private void EditInventory(int inventoryId)
     {
-        Console.WriteLine($"Editing inventory with ID: {inventoryId}");
+        //Console.WriteLine($"Editing inventory with ID: {inventoryId}");
         NavigationManager.NavigateTo($"/editinventory/{inventoryId}");
     }
 }
