@@ -13,3 +13,19 @@ D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IM
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.deps.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.pdb
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.AssemblyReference.cache
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfoInputs.cache
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfo.cs
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CoreCompileInputs.cache
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.sourcelink.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CopyComplete
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll

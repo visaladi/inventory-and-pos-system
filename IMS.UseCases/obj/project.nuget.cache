@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k2S0zs33JAZYK1YCzv179ABH7LhHEb1YDQTqM1oErXzi11byo79kJhOc1aQVziAl/6LazWQKs/IeQjqp6NhvHw==",
+  "dgSpecHash": "PSy1QoWX8IoeGSkq82h5ekPASjrlvpom/vP89N6hYzEFkHL+oWGPRhz+5Z80sFzifZjtKhN7qlFd5f5UdMhlYw==",
   "success": true,
-  "projectFilePath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.UseCases\\IMS.UseCases.csproj",
+  "projectFilePath": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.UseCases\\IMS.UseCases.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

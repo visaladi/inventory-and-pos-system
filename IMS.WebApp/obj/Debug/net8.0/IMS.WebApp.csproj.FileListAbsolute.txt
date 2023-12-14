@@ -35,3 +35,41 @@ D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IM
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.pdb
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.genruntimeconfig.cache
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.WebApp\obj\Debug\net8.0\ref\IMS.WebApp.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\appsettings.Development.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\appsettings.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.WebApp.staticwebassets.runtime.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.WebApp.exe
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.WebApp.deps.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.WebApp.runtimeconfig.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.WebApp.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.WebApp.pdb
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.CoreBusiness.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.Plugins.InMemory.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.UseCases.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.Plugins.InMemory.pdb
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.UseCases.pdb
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.csproj.AssemblyReference.cache
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.AssemblyInfoInputs.cache
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.AssemblyInfo.cs
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.csproj.CoreCompileInputs.cache
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.MvcApplicationPartsAssemblyInfo.cache
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.sourcelink.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\staticwebassets.build.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\staticwebassets.development.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\staticwebassets\msbuild.IMS.WebApp.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\staticwebassets\msbuild.build.IMS.WebApp.props
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.IMS.WebApp.props
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.IMS.WebApp.props
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\scopedcss\bundle\IMS.WebApp.styles.css
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\scopedcss\projectbundle\IMS.WebApp.bundle.scp.css
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.csproj.CopyComplete
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\refint\IMS.WebApp.dll
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.pdb
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.genruntimeconfig.cache
+D:\Dot Net\CakeOClock\PosAndEnv\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\ref\IMS.WebApp.dll

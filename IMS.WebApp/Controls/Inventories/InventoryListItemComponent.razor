@@ -1,20 +1,27 @@
 ﻿@using IMS.CoreBusiness
 @inject NavigationManager NavigationManager
 
-@if(Inventories != null && Inventories.Count > 0)
+@if (Inventories != null && Inventories.Count > 0)
 {
     foreach (var inv in Inventories)
     {
+        
+
         <tr>
             <td>@inv.InventoryName</td>
             <td>@inv.Quantity</td>
             <td>@inv.Price</td>
-            @* <td>@inv.Price.ToString("c")</td> *@
+            
             <td>
-                <button type="button" class="btn btn-dark" @onclick="@(()=> EditInventory(inv.InventoryID))">Edit</button>
+                <button type="button" class="btn btn-dark" onclick="@(()=> EditInventory(inv.InventoryID))">Edit</button>
             </td>
+
         </tr>
     }
+}
+else
+{
+    <p>No inventories found.</p>
 }
 
 @code {
@@ -23,6 +30,7 @@
 
     private void EditInventory(int inventoryId)
     {
+        //Console.WriteLine($"Editing inventory with ID: {inventoryId}");
         NavigationManager.NavigateTo($"/editinventory/{inventoryId}");
     }
 }
