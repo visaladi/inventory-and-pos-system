@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NfZehbhrng22+3N7s1HeSW5AouvVXZgpdgz/MNXfx0R/TzjHVtP4qfB0XBQZvAsgYu0ObMq2qA5GLslU0zt3ig==",
+  "dgSpecHash": "Us9W9MSiQXnUcWLSwu6PfyOg51HQ5ngQue6t1piZ22Jurem1grtodzA1L5oq/YirNqhABdZSVFjPoxsF7/m90A==",
   "success": true,
-  "projectFilePath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Test_01\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
+  "projectFilePath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Git_Inventory\\inventory-and-pos-system\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
