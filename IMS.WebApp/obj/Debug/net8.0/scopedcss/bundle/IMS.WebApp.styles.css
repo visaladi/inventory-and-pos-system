@@ -1,3 +1,5 @@
+@import '_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css';
+
 /* _content/IMS.WebApp/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-rkfayx65e9] {
     position: relative;
@@ -200,4 +202,41 @@ main[b-rkfayx65e9] {
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
+}
+/* _content/IMS.WebApp/Controls/Common/AutoCompleteComponent.razor.rz.scp.css */
+
+.search-result[b-03734fm4eq] {
+    overflow-y: auto;
+    max-height: 300px;
+    border: 1px solid silver;
+    padding-top: 5px;
+}
+
+div ul[b-03734fm4eq] {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+div ul li[b-03734fm4eq] {
+    cursor: pointer;
+}
+
+.selected[b-03734fm4eq] {
+    background-color: antiquewhite;
+}
+/* _content/IMS.WebApp/Controls/Inventories/SearchAndDisplayInventoriesComponent.razor.rz.scp.css */
+
+.search-result[b-4twsxdpwqe] {
+    overflow-y: auto;
+    max-height: 300px;
+    border: 1px solid silver;
+    padding-top: 5px;
+}
+
+div ul[b-4twsxdpwqe] {
+    list-style-type: none;
+}
+
+div ul li[b-4twsxdpwqe] {
+    cursor: pointer;
 }

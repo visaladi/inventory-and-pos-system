@@ -8,10 +8,9 @@
         <tr>
             <td>@inv.InventoryName</td>
             <td>@inv.Quantity</td>
-            <td>@inv.Price</td>
-            @* <td>@inv.Price.ToString("c")</td> *@
+            <td>@inv.Price.ToString("c")</td>
             <td>
-                <button type="button" class="btn btn-dark" @onclick="@(()=> EditInventory(inv.InventoryID))">Edit</button>
+                <button type="button" class="btn btn-dark" onclick="@(()=> EditInventory(inv.InventoryID))">Edit</button>
             </td>
         </tr>
     }
@@ -19,9 +18,6 @@
 
 @code {
     [Parameter]
-
-
-
     public List<Inventory> Inventories { get; set; } = new List<Inventory>();
 
     private void EditInventory(int inventoryId)

@@ -13,3 +13,18 @@ D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IM
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
 D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.deps.json
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.AssemblyReference.cache
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfoInputs.cache
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfo.cs
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CoreCompileInputs.cache
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CopyComplete
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
+D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll

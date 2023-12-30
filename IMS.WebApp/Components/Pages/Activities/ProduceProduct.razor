@@ -1,0 +1,89 @@
+﻿@page "/produce"
+@rendermode InteractiveServer
+
+@using IMS.UseCases.Products.interfaces
+@using IMS.WebApp.ViewModels
+@using IMS.UseCases.Products
+
+@using IMS.WebApp.Components.Pages.Products
+@using static IMS.WebApp.Controls.Common.AutoCompleteComponent
+@using IMS.UseCases.Activities.Interfaces
+
+@inject IViewProductsByNameUseCase ViewProductsByNameUseCase
+@inject IViewProductByIdUseCase ViewProductByIdUseCase
+@inject IProduceProductUseCase ProduceProductUseCase
+
+
+@* @using Microsoft.AspNetCore.Mvc.ViewEngines *@
+
+<h3>Produce Product</h3>
+
+<EditForm Model="produceViewModel" OnValidSubmit="Produce">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="po">Production</label>
+        <InputText id="po" class="form-control" @bind-Value="produceViewModel.ProductionNumber"></InputText>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="form-group">
+                <IMS.WebApp.Controls.Common.AutoCompleteComponent 
+                    Label="Product to Produce" SearchFunction="SearchProduct" OnItemSelected="OnItemSelected" />
+                <br />
+                @* @selectedItem?.Name *@
+                <input type="hidden" value="@produceViewModel.ProductId" />
+
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="qty">Quantity</label>
+        <InputNumber id="qty" class="form-control" @bind-Value="produceViewModel.QuantityToProduce"></InputNumber>
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Produce</button>
+
+
+</EditForm>
+
+@code {
+    private ProduceViewModel produceViewModel = new ProduceViewModel();
+
+    private Product? selectedProduct = null;
+
+    private async Task Produce()
+    {
+        await ProduceProductUseCase.ExecuteAsync(
+            this.produceViewModel.ProductionNumber,
+            this.selectedProduct,
+            this.produceViewModel.QuantityToProduce,
+            "Frank");
+
+        this.produceViewModel = new ProduceViewModel();
+        this.selectedProduct = null;
+    }
+
+    public async Task<List<ItemViewModel>?> SearchProduct(string name)
+    {
+        var list = await ViewProductsByNameUseCase.ExecuteAsync(name);
+
+        if (list == null) return null;
+
+        return list.Select(x => new ItemViewModel { Id = x.ProductID, Name = x.ProductName })?.ToList();
+    }
+
+    private async Task OnItemSelected(ItemViewModel item)
+    {
+        this.selectedProduct = await ViewProductByIdUseCase.ExecuteAsync(item.Id);
+
+        produceViewModel.ProductId = item.Id;
+        produceViewModel.Product = this.selectedProduct;
+    }
+
+
+}

@@ -1,0 +1,39 @@
+﻿@using IMS.CoreBusiness
+@using IMS.UseCases.Inventories.Interfaces
+@inject IViewInventoriesByNameUseCase ViewInventoriesByNameUseCase
+
+<SearchInventoryComponent OnSearchInventory="OnSearchInventory"/>
+
+@if(_inventories.Count > 0)
+{
+    <div style="overflow-y:auto;max-height:250px;border:2px solid red;padding-top:5px;">
+        <ul @ref="inventoryList" style="list-style-type:none">
+            @foreach(var inv in _inventories)
+            {
+                <li @key="inv.InventoryID" style="cursor:pointer" onclick="@(async ()=> {await OnSelectInventory(inv);} )">
+                    @inv.InventoryName
+                </li>
+            }
+        </ul>
+    </div>
+}
+
+@code {
+    private List<Inventory> _inventories = new List<Inventory>();
+
+    [Parameter]
+    public EventCallback<Inventory> OnInventorySelected { get; set; }
+
+    private ElementReference inventoryList; // Reference to the list element
+
+    private async Task OnSearchInventory(string searchTerm)
+    {
+        _inventories = (await ViewInventoriesByNameUseCase.ExecuteAsync(searchTerm)).ToList();
+    }
+
+    private async Task OnSelectInventory(Inventory inventory)
+    {
+        await OnInventorySelected.InvokeAsync(inventory);
+        _inventories.Clear();
+    }
+}

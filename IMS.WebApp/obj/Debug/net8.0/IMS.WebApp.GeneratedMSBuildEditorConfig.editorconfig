@@ -1,79 +1,187 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IMS.WebApp
 build_property.RootNamespace = IMS.WebApp
-build_property.ProjectDir = D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Git_Inventory\inventory-and-pos-system\IMS.WebApp\
+build_property.ProjectDir = D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.WebApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\Git_Inventory\inventory-and-pos-system\IMS.WebApp
+build_property.MSBuildProjectDirectory = D:\My Learning Outcomes\WAD Blazor\#CakeOClock Inventory\IMS_dotnet_8\# Test_01\IMS\IMS.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/App.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Pages/Counter.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Layout/LoginComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5Db21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Activities/ProduceProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY3Rpdml0aWVzXFByb2R1Y2VQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Activities/PurchaseInventory.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY3Rpdml0aWVzXFB1cmNoYXNlSW52ZW50b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Activities/SellProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY3Rpdml0aWVzXFNlbGxQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Pages/Error.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Pages/Home.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Pages/Inventories/AddInventory.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Inventories/AddInventory.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcmllc1xBZGRJbnZlbnRvcnkucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Pages/Inventories/EditInventory.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Inventories/EditInventory.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcmllc1xFZGl0SW52ZW50b3J5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Pages/Inventories/InventoryList.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Inventories/InventoryList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcmllc1xJbnZlbnRvcnlMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Pages/Weather.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Products/AddProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xBZGRQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Products/EditProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xFZGl0UHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Products/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xQcm9kdWN0TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Reports/InventoryTransactionReport.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzXEludmVudG9yeVRyYW5zYWN0aW9uUmVwb3J0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Reports/ProductTransactionReport.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzXFByb2R1Y3RUcmFuc2FjdGlvblJlcG9ydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Routes.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/_Imports.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Controls/Inventories/InventoryListComponent.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Inventories/InventoryListComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3JpZXNcSW52ZW50b3J5TGlzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Controls/Inventories/InventoryListItemComponent.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Inventories/InventoryListItemComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3JpZXNcSW52ZW50b3J5TGlzdEl0ZW1Db21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Controls/Inventories/SearchInventoryComponent.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Inventories/SearchInventoryComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3JpZXNcU2VhcmNoSW52ZW50b3J5Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Layout/MainLayout.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Products/ProductInventoriesComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUHJvZHVjdHNcUHJvZHVjdEludmVudG9yaWVzQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Products/ProductListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUHJvZHVjdHNcUHJvZHVjdExpc3RDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Products/ProductListItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUHJvZHVjdHNcUHJvZHVjdExpc3RJdGVtQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Products/SearchProductComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUHJvZHVjdHNcU2VhcmNoUHJvZHVjdENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-rkfayx65e9
 
-[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/Git_Inventory/inventory-and-pos-system/IMS.WebApp/Components/Layout/NavMenu.razor]
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-iq947q0r55
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Common/AutoCompleteComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ29tbW9uXEF1dG9Db21wbGV0ZUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-03734fm4eq
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Controls/Inventories/SearchAndDisplayInventoriesComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3JpZXNcU2VhcmNoQW5kRGlzcGxheUludmVudG9yaWVzQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-4twsxdpwqe
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/My Learning Outcomes/WAD Blazor/\#CakeOClock Inventory/IMS_dotnet_8/\# Test_01/IMS/IMS.WebApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

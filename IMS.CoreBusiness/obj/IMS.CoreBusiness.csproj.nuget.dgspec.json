@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Git_Inventory\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {}
+    "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\# Test_01\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {}
   },
   "projects": {
-    "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Git_Inventory\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {
+    "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\# Test_01\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Git_Inventory\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
+        "projectUniqueName": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\# Test_01\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
         "projectName": "IMS.CoreBusiness",
-        "projectPath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Git_Inventory\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
+        "projectPath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\# Test_01\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\Git_Inventory\\inventory-and-pos-system\\IMS.CoreBusiness\\obj\\",
+        "outputPath": "D:\\My Learning Outcomes\\WAD Blazor\\#CakeOClock Inventory\\IMS_dotnet_8\\# Test_01\\IMS\\IMS.CoreBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
