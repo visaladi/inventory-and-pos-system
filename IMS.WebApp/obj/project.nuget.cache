@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "can3YLSl7sey9WuImqQm+nL0554PXAbXlx+p8Y2yHCkc6KLP7+Fo9GTJp0v0clOTvtPrqx2q37hhVzu0HfoYlg==",
+  "dgSpecHash": "xAehCW+Sua56Z6LA9KxT91Xjmg4mTUCUGvlMyaPS1XlqNWfDtkb3aScEwAoAeiF+VM75nSqLrrdQT1kWpOGAcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-Authentication\\IMS\\IMS.WebApp\\IMS.WebApp.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\IMS.WebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

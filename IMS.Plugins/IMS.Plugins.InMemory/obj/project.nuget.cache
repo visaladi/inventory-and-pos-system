@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "30dVlCYLmbDHIYaA+swbs0SWvkJBWiLvXvJFkMYRrg91jpgUnDqAKEbhQ/NoeE6eUI1xWdgbMOIuvJViR/UAvA==",
+  "dgSpecHash": "JpGvaBexpSCi3yy7BFkOTwGV4jqABhLWnsZvQenVOqgNcLcss2fm8ME4Fo1TQLxO9DAE8NRJlXIiXI0i4kk1LA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-Authentication\\IMS\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.Plugins\\IMS.Plugins.InMemory\\IMS.Plugins.InMemory.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hp\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\hp\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

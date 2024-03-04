@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ThtqQ8yuxs9qmLpKdC3dsHFabgunX72M1KAYuC/rjWePqOc4Tt2A0SQNbG/O5N34iKLm/DpU6xKcJrzP5P5dUQ==",
+  "dgSpecHash": "X/21tJhczpsptl8IcmkE/CdmJo3aEreaJgQbaPzCq2YjcZqaM9sQFtH8hTyeKJmJcaVCd/Q2eVg+cYMJM30Uuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-Authentication\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
+  "projectFilePath": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

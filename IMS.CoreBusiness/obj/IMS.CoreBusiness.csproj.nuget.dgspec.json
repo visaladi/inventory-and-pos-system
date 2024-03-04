@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-Authentication\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {}
+    "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-Authentication\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {
+    "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-Authentication\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
         "projectName": "IMS.CoreBusiness",
-        "projectPath": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-Authentication\\IMS\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.CoreBusiness\\IMS.CoreBusiness.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-Authentication\\IMS\\IMS.CoreBusiness\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.CoreBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
