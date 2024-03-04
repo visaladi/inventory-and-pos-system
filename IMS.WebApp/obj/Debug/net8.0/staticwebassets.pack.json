@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css",
+      "Id": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css",
       "PackagePath": "staticwebassets\\IMS.WebApp.bundle.scp.css"
     },
     {
-      "Id": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\app.css",
+      "Id": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Dot Net\\CakeOClock\\PosAndEnv\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {

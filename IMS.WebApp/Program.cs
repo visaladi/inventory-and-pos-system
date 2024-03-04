@@ -1,20 +1,65 @@
 using IMS.Plugins.InMemory;
-using IMS.UseCases.Inventories.Interfaces;
-using IMS.UseCases.Inventories;
 using IMS.UseCases.PluginInterfaces;
 using IMS.WebApp.Components;
+using IMS.UseCases.Products.interfaces;
+using IMS.UseCases.Products;
+using IMS.UseCases.Activities.Interfaces;
+using IMS.UseCases.Activities;
+using IMS.UseCases.Reports.interfaces;
+using IMS.UseCases.Reports;
+using Microsoft.EntityFrameworkCore;
+using IMS.Plugins.EfCoreSqlServer;
+using IMS.Plugins.EFCoreSqlServer;
+using Microsoft.AspNetCore.Identity;
+using IMS.WebApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorComponents()
-    .AddInteractiveServerComponents();
+builder.Services.AddDbContext<AccountDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));
+});
 
-builder.Services.AddSingleton<IInventoryRepository, InventoryRepository>();
-builder.Services.AddTransient<IViewInventoriesByNameUseCase, ViewInventoriesByNameUseCase>();
-builder.Services.AddTransient<IAddInventoryUseCase, AddInventoryUseCase>();
-builder.Services.AddTransient<IViewInventoriesByIdUseCase, ViewInventoriesByIdUseCase>();
-builder.Services.AddTransient<IEditInventoryUseCase, EditInventoryUseCase>();
+builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+{
+    options.SignIn.RequireConfirmedEmail = false;
+}).AddEntityFrameworkStores<AccountDbContext>();
+
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
+//builder.Services.AddCascadingAuthenticationState();
+
+//builder.Services.AddDbContext<IMSContext>(options =>
+//{
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));
+//});
+builder.Services.AddDbContextFactory<IMSContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));
+});
+
+// Add services to the container.
+builder.Services.AddRazorComponents().AddInteractiveServerComponents();
+
+builder.Services.AddRazorPages();
+
+builder.Services.AddTransient<IProductRepository, ProductEFCoreRepository>();
+builder.Services.AddTransient<IProductTransactionRepository, ProductTransactionEFCoreRepository>();
+//builder.Services.AddSingleton<IProductRepository, ProductRepository>();
+//builder.Services.AddSingleton<IProductTransactionRepository, ProductTransactionRepository>();
+
+// Product UseCases
+builder.Services.AddTransient<IViewProductsByNameUseCase, ViewProductsByNameUseCase>();
+builder.Services.AddTransient<IAddProductUseCase, AddProductUseCase>();
+builder.Services.AddTransient<IViewProductByIdUseCase, ViewProductByIdUseCase>();
+builder.Services.AddTransient<IEditProductUseCase, EditProductUseCase>();
+
+// Activity UseCases
+builder.Services.AddTransient<ISellProductUseCase, SellProductUseCase>();
+builder.Services.AddTransient<ISearchProductTransactionUseCase, SearchProductTransactionUseCase>();
+
+
+
 
 var app = builder.Build();
 
@@ -31,7 +76,13 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
 
+app.MapRazorPages();    // Crucial for identity web page rendering
+
+//app.UseAuthentication();
+//app.UseAuthorization();
+
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
 
 app.Run();
