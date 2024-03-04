@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SaB6fRsStzCJk6JoumVtFX+L20In5IjLK3oYfpFAOA4=",
+  "Hash": "V8biu9AgSK9G8W90//ktmKIh7sOjiTqiFunKFQwGYcg=",
   "Source": "IMS.WebApp",
   "BasePath": "_content/IMS.WebApp",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "IMS.WebApp\\wwwroot",
       "Source": "IMS.WebApp",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "Pattern": "**"
     }
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "C:\\Users\\hp\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IMS.WebApp.styles.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IMS.WebApp.styles.css",
       "SourceId": "IMS.WebApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "IMS.WebApp.styles.css",
       "AssetKind": "All",
@@ -1211,13 +1211,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IMS.WebApp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\IMS.WebApp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css",
       "SourceId": "IMS.WebApp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "IMS.WebApp.bundle.scp.css",
       "AssetKind": "All",
@@ -1230,13 +1230,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\IMS.WebApp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\app.css",
       "SourceId": "IMS.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "IMS.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "IMS.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\favicon.png",
       "SourceId": "IMS.WebApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\IMS-2_Authentication\\IMS\\IMS.WebApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\hp\\Desktop\\IMS Github\\GithubIMS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
       "BasePath": "_content/IMS.WebApp",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
