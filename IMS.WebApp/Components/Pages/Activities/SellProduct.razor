@@ -6,6 +6,7 @@
 @using IMS.UseCases.Products
 @using IMS.UseCases.Products.interfaces
 @using IMS.WebApp.ViewModels
+@using Microsoft.AspNetCore.Authorization
 @using static IMS.WebApp.Controls.Common.AutoCompleteComponent
 
 @inject IViewProductsByNameUseCase ViewProductsByNameUseCase
@@ -14,7 +15,11 @@
 
 @inject IJSRuntime JSRuntime
 
-<h3>Sell Product</h3> <br />
+@attribute [Authorize(Policy = "Sales")]
+
+
+<h3>Sell Product</h3>
+<br />
 
 <EditForm Model="sellViewModel" OnValidSubmit="Sell" id="sell-form">
     <DataAnnotationsValidator />
@@ -36,7 +41,8 @@
                 @if (sellViewModel.ProductId > 0 && sellViewModel.UnitPrice >= 0)
                 {
                     <text>Price: </text>
-                    @sellViewModel.UnitPrice.ToString("c");
+                    @sellViewModel.UnitPrice.ToString("c")
+                    ;
                 }
             </div>
         </div>
@@ -86,7 +92,7 @@
         this.selectedProduct = null;
     }
 
-    public async Task< List<ItemViewModel>?> SearchProduct(string name)
+    public async Task<List<ItemViewModel>?> SearchProduct(string name)
     {
         var list = await ViewProductsByNameUseCase.ExecuteAsync(name);
 

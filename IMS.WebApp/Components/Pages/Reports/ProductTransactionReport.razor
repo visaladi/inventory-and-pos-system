@@ -1,11 +1,15 @@
 ﻿@page "/productreport"
 @using IMS.UseCases.Reports.interfaces
+@using Microsoft.AspNetCore.Authorization
 @rendermode InteractiveServer
 
 @inject ISearchProductTransactionUseCase SearchProductTransactionUseCase
 @inject IJSRuntime JSRuntime
 
-<h3>Product Transactions</h3> <br />
+@* @attribute [Authorize(Policy = "Admin")] *@
+
+<h3>Product Transactions</h3>
+<br />
 
 <div class="printarea">
     <div class="row">
@@ -52,7 +56,7 @@
                     <th>Unit Price</th>
                     <th>SO#</th>
                     @* <th>Production#</th>
-                    <th>Done By</th> *@
+                <th>Done By</th> *@
                 </tr>
             </thead>
             <tbody>
@@ -73,10 +77,10 @@
                         </td>
                         <td>@it.QauntityBefore</td>
                         <td>@it.QauntityAfter</td>
-                        <td>@it.UnitPrice?.ToString("c")</td>
+                        <td>Rs. @it.UnitPrice?.ToString()</td>
                         <td>@it.SONumber</td>
                         @* <td>@it.ProductionNumber</td>
-                        <td>@it.DoneBy</td> *@
+                <td>@it.DoneBy</td> *@
                     </tr>
                 }
             </tbody>

@@ -15,6 +15,13 @@ using IMS.WebApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configuring Authorizations
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy => policy.RequireClaim("Department", "Administration"));
+    options.AddPolicy("Sales", policy => policy.RequireClaim("Department", "Sales"));
+});
+
 builder.Services.AddDbContext<AccountDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));

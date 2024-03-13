@@ -30,6 +30,10 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Layout/LoginComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5Db21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Activities/SellProduct.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY3Rpdml0aWVzXFNlbGxQcm9kdWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +76,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Reports/ProductTransactionReport.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzXFByb2R1Y3RUcmFuc2FjdGlvblJlcG9ydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/UserList/ManageUsers.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTGlzdFxNYW5hZ2VVc2Vycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/UserList/Manage_User.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTGlzdFxNYW5hZ2VfVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Weather.razor]
