@@ -1,10 +1,15 @@
 ﻿@page "/products"
+@using Microsoft.AspNetCore.Authorization
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 
-<h3>Product List</h3> <br/>
+@attribute [Authorize(Policy = "Admin")]
 
-<SearchProductComponent OnSearchProduct="OnSearchProduct" /> <br />
+<h3>Product List</h3>
+<br />
+
+<SearchProductComponent OnSearchProduct="OnSearchProduct" />
+<br />
 
 Search Term : @searchTerm
 
