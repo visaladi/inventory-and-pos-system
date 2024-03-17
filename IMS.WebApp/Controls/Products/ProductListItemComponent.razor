@@ -4,25 +4,13 @@
 @foreach (var prod in Products)
 {
     <tr>
+        <td><img src="@prod.ImgUrl" height="50" width="50" /></td>
         <td>@prod.ProductName</td>
         <td>@prod.Quantity</td>
-        <td>@prod.Price.ToString("c")</td>
+        <td>Rs. @prod.Price.ToString()</td>
         <td>
             <button type="button" class="btn btn-dark" onclick="@(()=> EditProduct(prod.ProductID))">Edit</button>
         </td>
-        
-        @* <td>
-            @if (!string.IsNullOrWhiteSpace(prod.ProdImgUrl))
-            {
-                <div class="card" style="width: 100px;">
-                    <img src="@prod.ProdImgUrl" class="card-img-top" alt="Product Image">
-                </div>
-            }
-            else
-            {
-                <div>No Image Available</div>
-            }
-        </td> *@
 
     </tr>
 }

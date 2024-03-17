@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IMS.Plugins.EfCoreSqlServer.Migrations
 {
     [DbContext(typeof(IMSContext))]
-    [Migration("20240302071814_init1")]
-    partial class init1
+    [Migration("20240317095433_database_auth_pos_images")]
+    partial class database_auth_pos_images
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,6 +32,10 @@ namespace IMS.Plugins.EfCoreSqlServer.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductID"));
+
+                    b.Property<string>("ImgUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("Price")
                         .HasColumnType("float");

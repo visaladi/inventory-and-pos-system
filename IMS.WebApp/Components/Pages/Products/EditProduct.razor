@@ -1,11 +1,14 @@
 ﻿@page "/editproduct/{ProdId:int}"
 @using IMS.UseCases.Products
 @using IMS.UseCases.Products.interfaces
+@using Microsoft.AspNetCore.Authorization
 
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 @inject IEditProductUseCase EditProductUseCase
-@inject IViewProductByIdUseCase ViewProductByIdUseCase  
+@inject IViewProductByIdUseCase ViewProductByIdUseCase
+
+@attribute [Authorize(Policy = "Admin")]
 
 <h3>Edit Product</h3> <br/>
 
@@ -31,6 +34,13 @@
             <InputNumber id="name" class="form-control" @bind-Value="product.Price" />
         </div>
 
+
+        <div class="form-group">
+            <label for="price">Price</label>
+            <InputFile id="name" class="form-control" @bind-Value="product.ImgUrl" OnChange="LoadFiles" />
+        </div>
+
+
         <br />
 
         <button type="submit" class="btn btn-outline-primary">Save</button>
@@ -43,6 +53,8 @@
     public int ProdId { get; set; }
 
     private Product? product = new Product();
+
+    private List<IBrowserFile> loadedFiles = new();
 
     protected override async Task OnParametersSetAsync()
     {
@@ -63,14 +75,18 @@
         NavigationManager.NavigateTo("/products");
     }
 
-    // private async Task HandleFileSelected(InputFileChangeEventArgs e)
-    // {
-    //     var file = e.File;
-    //     if (file != null)
-    //     {
-    //         var buffer = new byte[file.Size];
-    //         await file.OpenReadStream().ReadAsync(buffer);
-    //         product.ProdImgUrl = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffer)}";
-    //     }
-    // }
+    private async Task LoadFiles(InputFileChangeEventArgs e)
+    {
+
+        loadedFiles.Clear();
+
+        var file = e.File;
+        if (file != null)
+        {
+            var buffer = new byte[file.Size];
+            await file.OpenReadStream().ReadAsync(buffer);
+            product.ImgUrl = $"data:{file.ContentType};base64,{Convert.ToBase64String(buffer)}";
+        }
+
+    }
 }
