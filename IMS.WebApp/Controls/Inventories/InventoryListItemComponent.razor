@@ -1,4 +1,4 @@
-﻿@using IMS.CoreBusiness
+﻿@* @using IMS.CoreBusiness
 @inject NavigationManager NavigationManager
 
 @if (Inventories != null && Inventories.Count > 0)
@@ -34,3 +34,4 @@ else
         NavigationManager.NavigateTo($"/editinventory/{inventoryId}");
     }
 }
+ *@

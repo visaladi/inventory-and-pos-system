@@ -1,9 +1,9 @@
-﻿using IMS.CoreBusiness;
+﻿//using IMS.CoreBusiness;
 
-namespace IMS.UseCases.Inventories.Interfaces
-{
-    public interface IAddInventoryUseCase
-    {
-        Task ExecuteAsync(Inventory inventory);
-    }
-}
+//namespace IMS.UseCases.Inventories.Interfaces
+//{
+//    public interface IAddInventoryUseCase
+//    {
+//        Task ExecuteAsync(Inventory inventory);
+//    }
+//}

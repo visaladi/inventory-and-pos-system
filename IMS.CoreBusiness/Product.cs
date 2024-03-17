@@ -17,6 +17,9 @@ namespace IMS.CoreBusiness
         public int Quantity { get; set; }
         [Range(5, int.MaxValue, ErrorMessage = "Must be greater than or equal to 10")]
         public double Price { get; set; }
-        
+
+        [Required]
+        public string? ImgUrl { get; set; }
+
     }
 }

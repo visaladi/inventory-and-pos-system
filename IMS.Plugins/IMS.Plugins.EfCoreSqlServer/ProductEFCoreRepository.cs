@@ -30,22 +30,21 @@ namespace IMS.Plugins.EFCoreSqlServer
         public async Task AddProductAsync(Product product)
         {
             using var db = this.contextFactory.CreateDbContext();
-            db.Products.Add(product);
+            //db.Products.Add(product);
+
+            // Updated to Upload the Images
+            db.Products.Add(new Product
+            {
+                ProductName = product.ProductName,
+                Price = product.Price,
+                Quantity = product.Quantity,
+                ImgUrl = product.ImgUrl
+
+            });
             FLagInventoryUnchanges(product, db);
 
             await db.SaveChangesAsync();
 
-            //if(product.ProductInventories != null &&
-            //   product.ProductInventories.Count > 0)
-            //{
-            //    foreach(var prodInv in  product.ProductInventories)
-            //    {
-            //        if(prodInv.Inventory != null)
-            //        {
-            //            this.db.Entry(prodInv.Inventory).State = EntityState.Unchanged;
-            //        }
-            //    }
-            //}
 
         }
 
@@ -80,6 +79,7 @@ namespace IMS.Plugins.EFCoreSqlServer
                 prod.ProductName = product.ProductName;
                 prod.Price = product.Price;
                 prod.Quantity = product.Quantity;
+                prod.ImgUrl = product.ImgUrl;
 
                 FLagInventoryUnchanges(product, db);
 
