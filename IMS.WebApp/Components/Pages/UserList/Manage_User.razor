@@ -1,10 +1,12 @@
-﻿@* @page "/manageuser/{UserId:int}"
+﻿@page "/manageuser/{UserId}"
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.AspNetCore.Identity
 @using System.Security.Claims
 @using System.ComponentModel.DataAnnotations
 
 @attribute [Authorize(Policy = "Admin")]
+
+@rendermode InteractiveServer
 
 @inject UserManager<IdentityUser> UserManager
 @inject NavigationManager NavigationManager
@@ -25,7 +27,7 @@
 
         <div class="form-group">
             <label for="dp">Department</label>
-            <select @bind="@viewModel.Department" class="form-control">
+            <select @bind="viewModel.Department" class="form-control">
                 <option></option>
                 <option value="Administration">Admin</option>
                 <option value="Sales">Sales</option>
@@ -35,6 +37,7 @@
 
         <button type="submit" class="btn btn-primary">Save Changes</button>
         <button type="button" class="btn btn-primary" @onclick="Cancel">Cancel</button>
+
     </EditForm>
 }
 
@@ -43,17 +46,17 @@
     [Parameter]
     public string? UserId { get; set; }
 
-    private IdentityUser? user;
-    private Claim? departmentClaim;
+    private IdentityUser user;
+    private Claim departmentClaim;
     private bool userHadDepartment = true;
-    private ManageUserViewModel? viewModel;
+    private ManageUserViewModel viewModel;
 
     public class ManageUserViewModel
     {
         public string? Email { get; set; }
 
         [Required]
-        public string? Department { get; set; }
+        public string Department { get; set; }
     }
 
     protected override async Task OnParametersSetAsync()
@@ -94,4 +97,3 @@
 
 
 }
- *@

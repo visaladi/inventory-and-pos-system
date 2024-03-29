@@ -4,6 +4,8 @@
 
 @attribute [Authorize(Policy = "Admin")]
 
+@rendermode InteractiveServer
+
 @inject UserManager<IdentityUser> UserManager
 @inject NavigationManager NavigationManager
 
@@ -26,6 +28,7 @@
                         @user.Email
                     </td>
                     <td>
+                        @* <button type="button" class="btn btn-link" onclick="@(()=> ManageUser(user.Id))"> *@
                         <button type="button" class="btn btn-link" onclick="@(()=> ManageUser(user))">
                             Manage
                         </button>
@@ -48,7 +51,12 @@
 
     private void ManageUser(IdentityUser user)
     {
-        NavigationManager.NavigateTo($"/manageuser/{user}");
+        NavigationManager.NavigateTo($"/manageuser/{user.Id}");
     }
+
+    // private void ManageUser(string UserId)
+    // {
+    //     NavigationManager.NavigateTo($"/manageuser/{UserId}");
+    // }
 
 }
