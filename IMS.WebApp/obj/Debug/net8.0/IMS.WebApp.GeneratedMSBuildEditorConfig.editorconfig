@@ -38,6 +38,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY3Rpdml0aWVzXFNlbGxQcm9kdWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Branch_POS/ProductsToCart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCcmFuY2hfUE9TXFByb2R1Y3RzVG9DYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Carts/UserCart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXJ0c1xVc2VyQ2FydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,18 +56,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Inventories/AddInventory.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcmllc1xBZGRJbnZlbnRvcnkucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Inventories/EditInventory.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcmllc1xFZGl0SW52ZW50b3J5LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Inventories/InventoryList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xJbnZlbnRvcmllc1xJbnZlbnRvcnlMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Products/AddProduct.razor]
@@ -98,16 +94,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Controls/Inventories/InventoryListComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3JpZXNcSW52ZW50b3J5TGlzdENvbXBvbmVudC5yYXpvcg==
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchProductListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQnJhbmNoX1BPU1xCcmFuY2hQcm9kdWN0TGlzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Controls/Inventories/InventoryListItemComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3JpZXNcSW52ZW50b3J5TGlzdEl0ZW1Db21wb25lbnQucmF6b3I=
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchProductListItemComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQnJhbmNoX1BPU1xCcmFuY2hQcm9kdWN0TGlzdEl0ZW1Db21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Controls/Inventories/SearchInventoryComponent.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3JpZXNcU2VhcmNoSW52ZW50b3J5Q29tcG9uZW50LnJhem9y
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchSearchProductComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQnJhbmNoX1BPU1xCcmFuY2hTZWFyY2hQcm9kdWN0Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Controls/Products/ProductListComponent.razor]
