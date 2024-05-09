@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IMS.Plugins.EfCoreSqlServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+79ba1235086e8d7af9c0950d4629d1ad0b434c3d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+089c5615ef2d15b6159becadc03935cb421753a9")]
 [assembly: System.Reflection.AssemblyProductAttribute("IMS.Plugins.EfCoreSqlServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IMS.Plugins.EfCoreSqlServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
