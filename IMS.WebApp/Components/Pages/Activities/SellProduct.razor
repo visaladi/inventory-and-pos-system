@@ -20,7 +20,6 @@
 
 <h3>Sell Product</h3>
 <br />
-
 <EditForm Model="sellViewModel" OnValidSubmit="Sell" id="sell-form">
     <DataAnnotationsValidator />
     <ValidationSummary />
@@ -41,8 +40,7 @@
                 @if (sellViewModel.ProductId > 0 && sellViewModel.UnitPrice >= 0)
                 {
                     <text>Price: </text>
-                    @sellViewModel.UnitPrice.ToString("c")
-                    ;
+                    @sellViewModel.UnitPrice.ToString("c");
                 }
             </div>
         </div>

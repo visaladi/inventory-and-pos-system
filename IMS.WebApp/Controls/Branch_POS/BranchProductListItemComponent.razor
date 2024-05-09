@@ -1,0 +1,97 @@
+﻿@using IMS.CoreBusiness;
+@using IMS.CoreBusiness.DTO
+@inject NavigationManager NavigationManager
+
+@using IMS.UseCases
+@inject IShoppingCartService shoppingCartService
+
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<IdentityUser> SignInManager
+
+@foreach (var prod in Products)
+{
+    <tr>
+        <td><img src="@prod.ImgUrl" height="50" width="50" /></td>
+        <td>@prod.ProductName</td>
+        <td>@prod.Quantity</td>
+        <td>Rs. @prod.Price.ToString()</td>
+        <td>
+            @* @if (await UserManager.IsSignedInAsync()) *@
+            @* @if (SignInManager.IsSignedIn())
+        {
+        <button @onclick="@(() => AddToCart(prod.ProductID, 1))">Add to Cart</button>
+        }
+        else
+        {
+        <span>Please Sign In to Add Items</span>
+        } *@
+            <button type="button" class="btn btn-primary" @onclick="AddToCart(prod.ProductID, 1)">Add to Cart</button>
+
+        </td>
+
+    </tr>
+}
+
+
+@code {
+    [Parameter]
+    public List<Product> Products { get; set; } = new List<Product>();
+
+    private async Task AddToCart(int productId, int quantity)
+    {
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        if (user.Identity.IsAuthenticated)
+        {
+            var email = user.Identity.Name; // Assuming 'Name' holds the user's email
+            await shoppingCartService.AddItemToCartAsync(email, productId, quantity);
+        }
+        else
+        {
+            // Handle scenario where user is not signed in (e.g., display message)
+        }
+
+
+        // var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        // if (authState.User.Identity.IsAuthenticated)
+        // {
+        //     var email = authState.User.Identity?.Name; // Assuming 'Name' holds the user's email
+        //     await shoppingCartService.AddItemToCartAsync(email, productId, quantity);
+        // }
+        // else
+        // {
+        //     // Handle scenario where user is not signed in (e.g., display message)
+        // }
+
+
+
+        // var user = await UserManager.GetUserAsync(HttpContext.Current.User); // Assuming HttpContext is accessible
+        // if (user != null)
+        // {
+        //     var email = user.Email; // Assuming 'Email' property holds user email
+        //     await shoppingCartService.AddItemToCartAsync(email, productId, quantity);
+        // }
+        // else
+        // {
+        //     // Handle scenario where user is not signed in (e.g., display message)
+        // }
+
+
+
+        // var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        // if (authState.User.IsAuthenticated)
+        // {
+        //     var email = authState.User.Identity?.Name; // Assuming 'Name' holds the user's email
+        //     await shoppingCartService.AddItemToCartAsync(email, productId, quantity);
+        // }
+        // else
+        // {
+        //     // Handle scenario where user is not signed in (e.g., display message)
+        // }
+    }
+}

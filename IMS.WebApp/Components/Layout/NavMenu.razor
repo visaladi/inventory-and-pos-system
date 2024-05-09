@@ -1,4 +1,10 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿
+
+
+
+
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">IMS.WebApp</a>
     </div>
@@ -14,11 +20,14 @@
             </NavLink>
         </div>
 
-        @* <div class="nav-item px-3">
-        <NavLink class="nav-link" href="inventories">
-        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Inventories
-        </NavLink>
-        </div> *@
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="identity/account/register">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Register Branch
+            </NavLink>
+        </div>
+        @* <li class="nav-item">
+            <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+        </li> *@
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="products">
@@ -26,17 +35,13 @@
             </NavLink>
         </div>
 
-        @* <div class="nav-item px-3">
-        <NavLink class="nav-link" href="purchase">
-        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Purchase
-        </NavLink>
-        </div> *@
 
-        @* <div class="nav-item px-3">
-        <NavLink class="nav-link" href="produce">
-        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Produce
-        </NavLink>
-        </div> *@
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="branchproduct">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> # Branch
+            </NavLink>
+        </div>
+
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="sell">
@@ -44,29 +49,18 @@
             </NavLink>
         </div>
 
-        @* <div class="nav-item px-3">
-        <NavLink class="nav-link" href="inventoryreport">
-        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Inventory Report
-        </NavLink>
-        </div> *@
-
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="productreport">
                 <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Product Report
             </NavLink>
         </div>
 
-        @* <div class="nav-item px-3">
-        <NavLink class="nav-link" href="identity/account/login">
-        <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Login
-        </NavLink>
-        </div> *@
-
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="manageusers">
                 <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Users List
             </NavLink>
         </div>
+
     </nav>
 </div>
 

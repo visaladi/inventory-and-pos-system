@@ -12,8 +12,10 @@ using IMS.Plugins.EfCoreSqlServer;
 using IMS.Plugins.EFCoreSqlServer;
 using Microsoft.AspNetCore.Identity;
 using IMS.WebApp.Data;
+using IMS.UseCases;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Configuring Authorizations
 builder.Services.AddAuthorization(options =>
@@ -26,7 +28,6 @@ builder.Services.AddDbContext<AccountDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));
 });
-
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
     options.SignIn.RequireConfirmedEmail = false;
@@ -44,6 +45,7 @@ builder.Services.AddDbContextFactory<IMSContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));
 });
+
 
 // Add services to the container.
 builder.Services.AddRazorComponents().AddInteractiveServerComponents();
@@ -65,7 +67,13 @@ builder.Services.AddTransient<IEditProductUseCase, EditProductUseCase>();
 builder.Services.AddTransient<ISellProductUseCase, SellProductUseCase>();
 builder.Services.AddTransient<ISearchProductTransactionUseCase, SearchProductTransactionUseCase>();
 
+// **Register IShoppingCartService** (New line)
+//builder.Services.AddTransient<IShoppingCartService, ShoppingCartService>();
 
+// S H O P P I N G    C A R T    D E P E N D E N C Y    I N J E C T I O N //
+builder.Services.AddScoped<ICartRepository, CartRepository>();
+builder.Services.AddScoped<IShoppingCartService, ShoppingCartService>();
+////////////////////////////////////////////////////////////////////////////
 
 
 var app = builder.Build();
