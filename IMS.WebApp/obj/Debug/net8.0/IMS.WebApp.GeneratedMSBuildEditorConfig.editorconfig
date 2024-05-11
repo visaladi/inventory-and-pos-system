@@ -17,155 +17,155 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = IMS.WebApp
 build_property.RootNamespace = IMS.WebApp
-build_property.ProjectDir = G:\NewGithubRepos\inventory-and-pos-system\IMS.WebApp\
+build_property.ProjectDir = E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.WebApp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\NewGithubRepos\inventory-and-pos-system\IMS.WebApp
+build_property.MSBuildProjectDirectory = E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.WebApp
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/App.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Layout/LoginComponent.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Layout/LoginComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5Db21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Activities/SellProduct.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Activities/SellProduct.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY3Rpdml0aWVzXFNlbGxQcm9kdWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Branch_POS/ProductsToCart.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Branch_POS/ProductsToCart.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCcmFuY2hfUE9TXFByb2R1Y3RzVG9DYXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Carts/UserCart.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Carts/UserCart.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXJ0c1xVc2VyQ2FydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Counter.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Error.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Home.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Products/AddProduct.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Products/AddProduct.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xBZGRQcm9kdWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Products/EditProduct.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Products/EditProduct.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xFZGl0UHJvZHVjdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Products/ProductList.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Products/ProductList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xQcm9kdWN0TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Reports/ProductTransactionReport.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Reports/ProductTransactionReport.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzXFByb2R1Y3RUcmFuc2FjdGlvblJlcG9ydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/UserList/ManageUsers.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/UserList/ManageUsers.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTGlzdFxNYW5hZ2VVc2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/UserList/Manage_User.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/UserList/Manage_User.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc2VyTGlzdFxNYW5hZ2VfVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Pages/Weather.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Routes.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/_Imports.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchProductListComponent.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchProductListComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQnJhbmNoX1BPU1xCcmFuY2hQcm9kdWN0TGlzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchProductListItemComponent.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchProductListItemComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQnJhbmNoX1BPU1xCcmFuY2hQcm9kdWN0TGlzdEl0ZW1Db21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchSearchProductComponent.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Controls/Branch_POS/BranchSearchProductComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQnJhbmNoX1BPU1xCcmFuY2hTZWFyY2hQcm9kdWN0Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Controls/Products/ProductListComponent.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Controls/Products/ProductListComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUHJvZHVjdHNcUHJvZHVjdExpc3RDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Controls/Products/ProductListItemComponent.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Controls/Products/ProductListItemComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUHJvZHVjdHNcUHJvZHVjdExpc3RJdGVtQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Controls/Products/SearchProductComponent.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Controls/Products/SearchProductComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcUHJvZHVjdHNcU2VhcmNoUHJvZHVjdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Layout/MainLayout.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-rkfayx65e9
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Components/Layout/NavMenu.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-iq947q0r55
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Controls/Common/AutoCompleteComponent.razor]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Controls/Common/AutoCompleteComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ29tbW9uXEF1dG9Db21wbGV0ZUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-03734fm4eq
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/Login.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/Register.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/_ViewImports.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/_ViewStart.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Pages/Shared/_Layout.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Pages/Shared/_LoginPartial.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Pages/_ViewImports.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/NewGithubRepos/inventory-and-pos-system/IMS.WebApp/Pages/_ViewStart.cshtml]
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -254,3 +254,21 @@ C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IM
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\refint\IMS.Plugins.InMemory.dll
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.pdb
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\ref\IMS.Plugins.InMemory.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.deps.json
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.Plugins.InMemory.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.CoreBusiness.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.UseCases.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.UseCases.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.csproj.AssemblyReference.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.AssemblyInfoInputs.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.AssemblyInfo.cs
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.csproj.CoreCompileInputs.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.sourcelink.json
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.csproj.CopyComplete
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\refint\IMS.Plugins.InMemory.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\IMS.Plugins.InMemory.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.InMemory\obj\Debug\net8.0\ref\IMS.Plugins.InMemory.dll
