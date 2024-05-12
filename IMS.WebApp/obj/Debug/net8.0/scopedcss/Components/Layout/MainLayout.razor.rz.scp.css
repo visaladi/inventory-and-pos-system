@@ -8,9 +8,9 @@ main[b-rkfayx65e9] {
     flex: 1;
 }
 
-.sidebar[b-rkfayx65e9] {
+/*.sidebar {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
+}*/
 
 .top-row[b-rkfayx65e9] {
     background-color: #f7f7f7;

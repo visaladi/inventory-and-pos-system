@@ -21,6 +21,30 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\patternxl1.png",
+      "PackagePath": "staticwebassets\\images\\patternxl1.png"
+    },
+    {
+      "Id": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\photo1.jpg",
+      "PackagePath": "staticwebassets\\images\\photo1.jpg"
+    },
+    {
+      "Id": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\photo2.jpg",
+      "PackagePath": "staticwebassets\\images\\photo2.jpg"
+    },
+    {
+      "Id": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\photo3.jpg",
+      "PackagePath": "staticwebassets\\images\\photo3.jpg"
+    },
+    {
+      "Id": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\photo4.jpg",
+      "PackagePath": "staticwebassets\\images\\photo4.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.IMS.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

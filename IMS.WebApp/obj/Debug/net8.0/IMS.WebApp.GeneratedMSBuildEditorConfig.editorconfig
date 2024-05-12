@@ -54,10 +54,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Products/AddProduct.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xBZGRQcm9kdWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -126,16 +122,16 @@ build_metadata.AdditionalFiles.CssScope = b-rkfayx65e9
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-iq947q0r55
 
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-64ndfhf55b
+
 [E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Controls/Common/AutoCompleteComponent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcQ29tbW9uXEF1dG9Db21wbGV0ZUNvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-03734fm4eq
 
 [E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/_ViewImports.cshtml]
@@ -169,3 +165,7 @@ build_metadata.AdditionalFiles.CssScope =
 [E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Cake O' Clock/Inventory & POS/inventory-and-pos-system/IMS.WebApp/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-m5jvom6hgm
