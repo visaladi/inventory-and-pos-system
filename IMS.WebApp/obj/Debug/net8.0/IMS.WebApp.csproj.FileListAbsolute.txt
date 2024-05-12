@@ -2195,3 +2195,5 @@ E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.WebApp\obj\Debug\n
 E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.pdb
 E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\IMS.WebApp.genruntimeconfig.cache
 E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\ref\IMS.WebApp.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.WebApp\obj\Debug\net8.0\scopedcss\Areas\Identity\Pages\Account\Register.cshtml.rz.scp.css

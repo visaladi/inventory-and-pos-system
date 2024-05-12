@@ -1,3 +1,4 @@
+/* _content/IMS.WebApp/Areas/Identity/Pages/Account/Register.cshtml.rz.scp.css */
 /* _content/IMS.WebApp/Components/Layout/MainLayout.razor.rz.scp.css */
 .page[b-rkfayx65e9] {
     position: relative;
@@ -9,9 +10,9 @@ main[b-rkfayx65e9] {
     flex: 1;
 }
 
-.sidebar[b-rkfayx65e9] {
+/*.sidebar {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
-}
+}*/
 
 .top-row[b-rkfayx65e9] {
     background-color: #f7f7f7;
@@ -181,6 +182,10 @@ main[b-rkfayx65e9] {
 
 .nav-scrollable[b-iq947q0r55] {
     display: none;
+    background-color: grey;
+    border: 3px solid crimson;
+    border-top-right-radius: 20px; /* Adjust the border radius for the top right corner */
+    border-bottom-right-radius: 20px;
 }
 
 .navbar-toggler:checked ~ .nav-scrollable[b-iq947q0r55] {
@@ -195,12 +200,52 @@ main[b-rkfayx65e9] {
     .nav-scrollable[b-iq947q0r55] {
         /* Never collapse the sidebar for wide screens */
         display: block;
-
+        
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
 }
+/* _content/IMS.WebApp/Components/Pages/Home.razor.rz.scp.css */
+/*.background-container {
+    background-size: cover;
+    background-position: center;
+    height: auto;*/ /* Set full height of viewport */
+   
+/*}
+.photos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.text-center {
+    font-family: "Quicksand", sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.photo-tile {
+    flex: 0 0 calc(25% - 40px);
+    margin: 10px;
+    text-align: center;
+}
+
+.caption {
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: "Quicksand", sans-serif;
+}
+
+.photo-tile img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}*/
 /* _content/IMS.WebApp/Controls/Common/AutoCompleteComponent.razor.rz.scp.css */
 
 .search-result[b-03734fm4eq] {
