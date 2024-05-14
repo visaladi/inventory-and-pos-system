@@ -113,3 +113,23 @@ C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IM
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.pdb
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.genruntimeconfig.cache
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\ref\IMS.Plugins.EfCoreSqlServer.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.deps.json
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.runtimeconfig.json
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.CoreBusiness.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.UseCases.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.UseCases.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.csproj.AssemblyReference.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.GeneratedMSBuildEditorConfig.editorconfig
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.AssemblyInfoInputs.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.AssemblyInfo.cs
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.csproj.CoreCompileInputs.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.sourcelink.json
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.csproj.CopyComplete
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\refint\IMS.Plugins.EfCoreSqlServer.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.genruntimeconfig.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\ref\IMS.Plugins.EfCoreSqlServer.dll

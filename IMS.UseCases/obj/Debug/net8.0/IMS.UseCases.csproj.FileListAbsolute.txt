@@ -224,3 +224,19 @@ C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.UseCases\o
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.deps.json
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.AssemblyReference.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfoInputs.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfo.cs
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CoreCompileInputs.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.sourcelink.json
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CopyComplete
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll

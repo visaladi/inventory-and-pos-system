@@ -164,3 +164,15 @@ C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.CoreBusine
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\refint\IMS.CoreBusiness.dll
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.pdb
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\ref\IMS.CoreBusiness.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\bin\Debug\net8.0\IMS.CoreBusiness.deps.json
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\bin\Debug\net8.0\IMS.CoreBusiness.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.GeneratedMSBuildEditorConfig.editorconfig
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.AssemblyInfoInputs.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.AssemblyInfo.cs
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.csproj.CoreCompileInputs.cache
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.sourcelink.json
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\refint\IMS.CoreBusiness.dll
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\IMS.CoreBusiness.pdb
+G:\NewGithubRepos\inventory-and-pos-system\IMS.CoreBusiness\obj\Debug\net8.0\ref\IMS.CoreBusiness.dll
