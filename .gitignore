@@ -361,3 +361,21 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vs/IMS/DesignTimeBuild/.dtbcache.v2
+/.vs/IMS/DesignTimeBuild/.dtbcache.v2
+/.vs/IMS/v17/.futdcache.v2
+/.vs/ProjectEvaluation/ims.metadata.v7.bin
+/.vs/ProjectEvaluation/ims.projects.v7.bin
+/.vs/IMS/v17/.suo
+/IMS.WebApp/bin/Debug/net8.0/IMS.WebApp.dll
+/IMS.WebApp/bin/Debug/net8.0/IMS.WebApp.pdb
+/IMS.WebApp/bin/Debug/net8.0/IMS.WebApp.exe
+/IMS.WebApp/obj/Debug/net8.0/ref/IMS.WebApp.dll
+/IMS.WebApp/obj/Debug/net8.0/refint/IMS.WebApp.dll
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.AssemblyInfo.cs
+/IMS.WebApp/obj/Debug/net8.0/apphost.exe
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.AssemblyInfoInputs.cache
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.csproj.CoreCompileInputs.cache
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.dll
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.pdb
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.sourcelink.json
