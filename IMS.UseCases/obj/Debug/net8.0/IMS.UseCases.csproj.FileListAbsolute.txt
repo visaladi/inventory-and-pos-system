@@ -224,3 +224,19 @@ C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.UseCases\o
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.deps.json
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.UseCases.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.AssemblyReference.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfoInputs.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.AssemblyInfo.cs
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CoreCompileInputs.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.sourcelink.json
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.csproj.CopyComplete
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\refint\IMS.UseCases.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\IMS.UseCases.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.UseCases\obj\Debug\net8.0\ref\IMS.UseCases.dll

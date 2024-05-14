@@ -113,3 +113,23 @@ C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IM
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.pdb
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.genruntimeconfig.cache
 C:\Users\hp\Desktop\IMS Github\GithubIMS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\ref\IMS.Plugins.EfCoreSqlServer.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.deps.json
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.runtimeconfig.json
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.CoreBusiness.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.UseCases.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.CoreBusiness.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\bin\Debug\net8.0\IMS.UseCases.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.csproj.AssemblyReference.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.AssemblyInfoInputs.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.AssemblyInfo.cs
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.csproj.CoreCompileInputs.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.sourcelink.json
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.csproj.CopyComplete
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\refint\IMS.Plugins.EfCoreSqlServer.dll
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.pdb
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\IMS.Plugins.EfCoreSqlServer.genruntimeconfig.cache
+E:\Cake O' Clock\Inventory & POS\inventory-and-pos-system\IMS.Plugins\IMS.Plugins.EfCoreSqlServer\obj\Debug\net8.0\ref\IMS.Plugins.EfCoreSqlServer.dll
