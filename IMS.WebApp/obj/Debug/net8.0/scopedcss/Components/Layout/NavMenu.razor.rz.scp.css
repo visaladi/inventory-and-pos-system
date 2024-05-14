@@ -83,6 +83,10 @@
 
 .nav-scrollable[b-iq947q0r55] {
     display: none;
+    background-color: grey;
+    border: 3px solid crimson;
+    border-top-right-radius: 20px; /* Adjust the border radius for the top right corner */
+    border-bottom-right-radius: 20px;
 }
 
 .navbar-toggler:checked ~ .nav-scrollable[b-iq947q0r55] {
@@ -97,7 +101,7 @@
     .nav-scrollable[b-iq947q0r55] {
         /* Never collapse the sidebar for wide screens */
         display: block;
-
+        
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;

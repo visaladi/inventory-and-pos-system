@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IMS.WebApp.Migrations
 {
     [DbContext(typeof(AccountDbContext))]
-    [Migration("20240317095529_database_auth_pos_images")]
-    partial class database_auth_pos_images
+    [Migration("20240511154455_Initial_Migration_Test01")]
+    partial class Initial_Migration_Test01
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

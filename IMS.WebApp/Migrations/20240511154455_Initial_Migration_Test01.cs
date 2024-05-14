@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace IMS.WebApp.Migrations
 {
     /// <inheritdoc />
-    public partial class database_auth_pos_images : Migration
+    public partial class Initial_Migration_Test01 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
