@@ -361,3 +361,11 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vs/IMS/v17/.suo
+/IMS.Plugins/IMS.Plugins.EfCoreSqlServer/obj/Debug/net8.0/IMS.Plugins.EfCoreSqlServer.AssemblyInfo.cs
+/IMS.Plugins/IMS.Plugins.EfCoreSqlServer/obj/Debug/net8.0/IMS.Plugins.EfCoreSqlServer.AssemblyInfoInputs.cache
+/IMS.Plugins/IMS.Plugins.EfCoreSqlServer/obj/Debug/net8.0/IMS.Plugins.EfCoreSqlServer.csproj.AssemblyReference.cache
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.AssemblyInfoInputs.cache
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.AssemblyInfo.cs
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.csproj.AssemblyReference.cache
+/IMS.WebApp/obj/Debug/net8.0/project.razor.vs.bin
