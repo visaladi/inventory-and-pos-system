@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PQpkl8VYdYRzg3Iach8R7WVBk8psO8ru49vPtSDbrmk=",
+  "Hash": "VILtSKE0pUz7Rtii34n3e2OKXCl5o+uqZiFxjUj8+KE=",
   "Source": "IMS.WebApp",
   "BasePath": "_content/IMS.WebApp",
   "Mode": "Default",
@@ -1326,6 +1326,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
+    },
+    {
+      "Identity": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\name.png",
+      "SourceId": "IMS.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\",
+      "BasePath": "_content/IMS.WebApp",
+      "RelativePath": "images/name.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\name.png"
     },
     {
       "Identity": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\patternxl1.png",

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
+      "Id": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\name.png",
+      "PackagePath": "staticwebassets\\images\\name.png"
+    },
+    {
       "Id": "E:\\Cake O' Clock\\Inventory & POS\\inventory-and-pos-system\\IMS.WebApp\\wwwroot\\images\\patternxl1.png",
       "PackagePath": "staticwebassets\\images\\patternxl1.png"
     },
