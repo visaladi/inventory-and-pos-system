@@ -33,6 +33,7 @@ namespace IMS.Plugins.EfCoreSqlServer
             {
                 cartItem = new CartItem { CartId = cart.CartId, ProductId = productId, Quantity = quantity };
                 context.CartItems.Add(cartItem);
+                await context.SaveChangesAsync();
             }
             else
             {

@@ -17,8 +17,29 @@
 @inject IShoppingCartService ShoppingCartService
 @inject IViewProductsByNameUseCase ViewProductsByNameUseCase
 
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize(Policy = "Admin")]
+
 
 <h1>Products List - @email</h1>
+
+@if (users != null)
+{
+    <div class="col-md-6">
+        <label for="selectedUser">Select User:</label>
+        <select @bind="selectedUserId" class="form-control">
+            <option></option>
+            @foreach (var user in users)
+            {
+                <option value="@user.Id">@user.UserName</option>
+            }
+        </select>
+    </div>
+}
+<button @onclick="@(() => GoTo_Cart(selectedUserId))">Go to Cart</button>
+@errorMsg
+
+
 
 <div class="row">
     @if (products == null)
@@ -33,23 +54,29 @@
                     <th>Product Image</th>
                     <th>Product Name</th>
                     <th>Price</th>
-                    <th>Quantity</th>
+                    <th>Total Qty</th>
+                    <th>Branch Qty</th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var product in products)
                 {
-                    <tr>
-                        <td><img src="@product.ImgUrl" height="50" width="50" /></td>
-                        <td>@product.ProductName</td>
-                        <td>@product.Price</td>
-                        <td>@product.Quantity</td>
-
-                        <td>
-                            <button @onclick="@(() => AddToCart(product.ProductID))">Add to Cart</button>
-                        </td>
-                    </tr>
+                    if (product != null)
+                    {
+                        <tr>
+                            <td><img src="@product.ImgUrl" height="50" width="50" /></td>
+                            <td>@product.ProductName</td>
+                            <td>@product.Price</td>
+                            <td>@product.Quantity</td>
+                            @* <td><input type="number" min="1" @bind="selectedQuantity" width="10px" /></td> *@
+                            <td>
+                                <input type="number" min="1" @bind="selectedQuantity" width="10px" />
+                                @* <input type="number" min="1" @bind="@(selectedQuantity[product.ProductID])" /> *@
+                                <button @onclick="@(() => AddToCart(product.ProductID))">Add to Cart</button>
+                            </td>
+                        </tr>
+                    }
                 }
             </tbody>
         </table>
@@ -58,41 +85,47 @@
 
 @code {
     private string email = "";
+    private string errorMsg = "";
     private IEnumerable<Product> products;
+    private string selectedUserId;
+    private List<IdentityUser>? users;
+    private int selectedQuantity = 1;
+
+
+
 
     protected override async Task OnInitializedAsync()
     {
         var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
         email = authState.User.Identity?.Name;
-
         products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
-    }
 
+
+        try
+        {
+            // users = await UserManager.GetUsersAsync();
+            users = UserManager.Users.ToList();
+            // users = UserManager.Users.ToList();
+        }
+        catch (Exception ex)
+        {
+            errorMsg = $"Error retrieving users: {ex.Message}";
+        }
+
+        // var isAdmin = authState.User.IsInRole("Admin");
+        // if (isAdmin)
+        // {
+        //     users = await UserManager.GetUsersInRoleAsync("Sales");
+        // }
+    }
 
     private async Task AddToCart(int productId)
     {
-        #region AddToCart_Test
+        #region AddToCart
+
         // var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        // var userId = authState.User.Identity?.Name; // Get signed-in user's ID
-
-        // if (userId != null)
-        // {
-        //     await ShoppingCartService.AddItemToCartAsync(userId, productId, 1); // Add 1 unit by default
-        // }
-        // else
-        // {
-        //     // Handle scenario where user is not signed in (e.g., display a message or redirect to login)
-        // }
-
-        // var user = await UserManager.GetUserAsync(await AuthenticationStateProvider.GetAuthenticationStateAsync());
-
-
-
-
-        // var user = await UserManager.GetUserAsync(await AuthenticationStateProvider.GetAuthenticationStateAsync());
+        // var user = await UserManager.GetUserAsync(authState.User);
         // var userId = user?.Id;
-        // // var user = await UserManager.GetUserAsync(HttpContext.User);
-        // // var userId = user?.FindFirstValue(ClaimTypes.NameIdentifier); // Assuming UserId is stored in NameIdentifier claim
 
         // if (userId != null)
         // {
@@ -100,24 +133,91 @@
         // }
         // else
         // {
-        //     // Handle scenario where user is not signed in
         // }
+
+        // NavigationManager.NavigateTo($"/usercart/{userId}");
+
         #endregion
 
-        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        var user = await UserManager.GetUserAsync(authState.User);
-        var userId = user?.Id;
+        #region AddToSelectedBranch - Working!!!
 
-        if (userId != null)
+        // if (string.IsNullOrEmpty(selectedUserId))
+        // {
+        //     errorMsg = "No User is Selected!";
+        //     return;
+        // }
+
+        // // Retrieve the entered quantity for the product
+        // // int quantity = selectedQuantity.ContainsKey(productId) ? selectedQuantity[productId] : 1;
+
+        // int qty = selectedQuantity;
+
+        // await ShoppingCartService.AddItemToCartAsync(selectedUserId, productId, qty);
+        // errorMsg = $"{productId} is added into the {selectedUserId}'s cart";
+
+        #endregion
+
+        #region AddToSelectedBranch & DeductQuantity - Working!!!
+
+
+        if (string.IsNullOrEmpty(selectedUserId))
         {
-            await ShoppingCartService.AddItemToCartAsync(userId, productId, 1);
+            errorMsg = "No User is Selected!";
+            return;
+        }
+
+        // Get the selected product
+        var product = await ProductRepository.GetProductByIdAsync(productId);
+
+        // Check if the product exists
+        if (product != null)
+        {
+            // Deduct the selected quantity from the product inventory
+            product.Quantity -= selectedQuantity;
+
+            // Update the product quantity in the repository
+            await ProductRepository.UpdateProductAsync(product);
+
+            // Add the item to the cart
+            int qty = selectedQuantity;
+            await ShoppingCartService.AddItemToCartAsync(selectedUserId, productId, qty);
+
+            errorMsg = $"{selectedQuantity} {product.ProductName} added to {selectedUserId}'s cart";
         }
         else
         {
+            errorMsg = "Product not found!";
         }
 
+        #endregion
+
+    }
+
+    private async Task GoTo_Cart(string userId)
+    {
         NavigationManager.NavigateTo($"/usercart/{userId}");
     }
+
+    // private async Task OnUserSelected(string userId)
+    // {
+    //     selectedUserId = userId;
+    // }
+
+    #region SelectOption
+
+    // public record Topping(int Id, string Name);
+    // public string selectedTopping { get; set; } = "No Topping";
+    // public List<Topping> toppings = new List<Topping>()
+    // {
+    //     new Topping(1, "No Topping"),
+    //     new Topping(2, "Cheese"),
+    //     new Topping(3, "Onions"),
+    //     new Topping(4, "Pickles"),
+    //     new Topping(5, "Avocado"),
+    //     new Topping(6, "Lettuce")
+    // };
+
+    #endregion
 
     #region GetUserEmail
 

@@ -15,11 +15,6 @@ namespace IMS.Plugins.EFCoreSqlServer
 {
     public class ProductEFCoreRepository : IProductRepository
     {
-        //private readonly IMSContext db;
-        //public ProductEFCoreRepository(IMSContext db)
-        //{
-        //    this.db = db;
-        //}
         private readonly IDbContextFactory<IMSContext> contextFactory;
 
         public ProductEFCoreRepository(IDbContextFactory<IMSContext> contextFactory)
@@ -41,7 +36,6 @@ namespace IMS.Plugins.EFCoreSqlServer
                 ImgUrl = product.ImgUrl
 
             });
-            FLagInventoryUnchanges(product, db);
 
             await db.SaveChangesAsync();
 
@@ -81,25 +75,8 @@ namespace IMS.Plugins.EFCoreSqlServer
                 prod.Quantity = product.Quantity;
                 prod.ImgUrl = product.ImgUrl;
 
-                FLagInventoryUnchanges(product, db);
-
                 await db.SaveChangesAsync();
             }
-        }
-
-        private void FLagInventoryUnchanges(Product product, IMSContext db)
-        {
-            //if (product.ProductInventories != null &&
-            //                   product.ProductInventories.Count > 0)
-            //{
-            //    foreach (var prodInv in product.ProductInventories)
-            //    {
-            //        if (prodInv.Inventory != null)
-            //        {
-            //            this.db.Entry(prodInv.Inventory).State = EntityState.Unchanged;
-            //        }
-            //    }
-            //}
         }
     }
 }

@@ -24,19 +24,19 @@
 
     <div class="form-group">
         <label for="quantity">Quantity</label>
-        <InputNumber id="name" class="form-control" @bind-Value="product.Quantity" />
+        <InputNumber id="quantity" class="form-control" @bind-Value="product.Quantity" />
     </div>
 
     <div class="form-group">
         <label for="price">Price</label>
-        <InputNumber id="name" class="form-control" @bind-Value="product.Price" />
+        <InputNumber id="price" class="form-control" @bind-Value="product.Price" />
     </div>
 
 
 
     <div class="form-group">
-        <label for="price">Price</label>
-        <InputFile id="name" class="form-control" @bind-Value="product.ImgUrl" OnChange="LoadFiles" />
+        <label for="image">Image</label>
+        <InputFile id="image" class="form-control" @bind-Value="product.ImgUrl" OnChange="LoadFiles" />
     </div>
 
 
@@ -49,7 +49,7 @@
 
 
 @code {
-    private Product product = new Product();
+    private Product product { get; set; }  = new Product();
 
     private List<IBrowserFile> loadedFiles = new();
 

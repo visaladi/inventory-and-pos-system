@@ -8,7 +8,8 @@
 @using Microsoft.AspNetCore.Components.Authorization
 @inject AuthenticationStateProvider AuthenticationStateProvider
 
-<h1>User Cart - @email</h1>
+<h1>Logged In User - @email</h1>
+<h1>Cart User - @UserId</h1>
 
 @if (cart != null && cart.Items != null && cart.Items.Any())
 {
