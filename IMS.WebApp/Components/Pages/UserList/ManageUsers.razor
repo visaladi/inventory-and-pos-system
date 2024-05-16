@@ -40,19 +40,6 @@
 }
 
 @code {
-    private List<IdentityUser>? users;
-
-    protected override void OnInitialized()
-    {
-        base.OnInitialized();
-
-        users = UserManager.Users.ToList();
-    }
-
-    private void ManageUser(IdentityUser user)
-    {
-        NavigationManager.NavigateTo($"/manageuser/{user.Id}");
-    }
-
+    
 
 }
