@@ -409,3 +409,10 @@ FodyWeavers.xsd
 /IMS.WebApp/obj/IMS.WebApp.csproj.nuget.g.props
 /IMS.WebApp/obj/project.assets.json
 /IMS.WebApp/obj/project.nuget.cache
+/IMS.WebApp/bin/Debug/net8.0/IMS.CoreBusiness.dll
+/IMS.WebApp/bin/Debug/net8.0/IMS.Plugins.EfCoreSqlServer.dll
+/IMS.WebApp/bin/Debug/net8.0/IMS.UseCases.dll
+/IMS.WebApp/obj/Debug/net8.0/IMS.WebApp.csproj.AssemblyReference.cache
+/IMS.WebApp/bin/Debug/net8.0/IMS.CoreBusiness.dll
+/IMS.WebApp/bin/Debug/net8.0/IMS.Plugins.EfCoreSqlServer.dll
+/IMS.WebApp/bin/Debug/net8.0/IMS.UseCases.dll
