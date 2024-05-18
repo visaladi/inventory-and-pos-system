@@ -1,10 +1,19 @@
 ﻿@page "/"
+@inherits LayoutComponentBase
 @using IMS.UseCases.Products.interfaces
 
 @inject IViewProductsByNameUseCase ViewProductsByNameUseCase
 
 <PageTitle>Home</PageTitle>
 <div class="background-container" style="background-image: url('images/patternxl1.png'); ">
+
+
+<div class="row" style="padding:20px">
+    <p class="title-text col-6"> Welcome to cake O' Clock Invenory Management System !</p>
+    <p class="date-time-text col-6 text-end">@currentDateTime.ToString("MMMM dd, yyyy, hh:mm:ss tt")</p>
+</div>
+
+    
 
 
     <div class="photos-container">
@@ -35,26 +44,34 @@
 
     </div>
 
-
+    </div>
 
 <ul>
     @foreach (var prd in _products)
     {
         <img src="@prd.ImgUrl" height="70" width="100" />
         <li>@prd.ProductName</li>
+
+        
     }
 </ul>
-</div>
+
 @code {
     private List<Product> _products = new List<Product>();
+    private DateTime currentDateTime;
+    private string email = "";
 
     protected override async Task OnInitializedAsync()
     {        
         _products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
+        currentDateTime = DateTime.Now;
+
     }
 }
 
 <style>
+
+
 
 
 
@@ -96,6 +113,24 @@
         height: auto;
         border-radius: 50%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .title-text {
+        padding-left:40px;
+    }
+    
+
+    .date-text {
+        font-size: 1.2em;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
 </style>

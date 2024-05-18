@@ -4,16 +4,22 @@
 
 
 
-<div class="top-row ps-3 navbar navbar-dark">
+@* <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">Cake O' Clock</a>
     </div>
-</div>
+</div> *@
 
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()" style="background-color:gray">
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()" style="background-color:gray; height:contain">
     <nav class="flex-column" >
+
+        <div class="nav-image px-3">
+            <a href="/">
+                <img src="images/logo.png" alt="Logo" style="height: 210px; display: block; margin: 0 auto; padding-bottom:10px; ">
+            </a>
+        </div>
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
@@ -38,14 +44,14 @@
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="branchproduct">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> # Branch
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Branch
             </NavLink>
         </div>
 
 
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="sell">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Sell
+                <span class="bi bi-plus-square-fill-nav-menu"   aria-hidden="true"></span> Sell
             </NavLink>
         </div>
 
@@ -64,3 +70,8 @@
     </nav>
 </div>
 
+<style>
+    .nav-item{
+        color:white;
+    }
+</style>
