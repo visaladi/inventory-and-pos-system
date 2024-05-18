@@ -17,7 +17,7 @@
                         <div class="card border custom-card">
                             <div class="card-body px-lg-4 pt-4">
 
-                                @* <img src="images/logo.png" alt="Logo" style="height: 180px; display: block; margin: 0 auto;"> *@
+                                <img src="~/images/logo.png" alt="Logo" style="height: 180px; display: block; margin: 0 auto;">
                                 
                                 <div class="col-12 text-center py-2">
                                     <h1>Log in</h1>
@@ -26,7 +26,7 @@
                                 
                                 <section>
                                     <form id="account" method="post">
-                                        <h3>Use a local account to log in.</h3>
+                                        <p class="text" >Use a local account to log in.</p>
                                         <hr />
                                         <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                                         <div class="form-floating mb-3">
@@ -166,10 +166,11 @@
     .custom-card {
         height: auto;
         width: 600px;
-        background-color: rgba(0, 0, 0, 0.2);
-        color: white;
+        /* background-color: rgba(0, 0, 0, 0.2); */
+        /* color: white; */
         border-radius: 20px;
         justify-content: center;
+        margin:2px;
 
     }
 
@@ -177,5 +178,9 @@
     .image-container {
         display: flex;
         justify-content: center;
+    }
+
+    .text {
+        text-align:center;
     }
 </style>
