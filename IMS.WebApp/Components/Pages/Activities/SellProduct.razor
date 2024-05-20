@@ -1,4 +1,4 @@
-﻿@page "/sell"
+﻿@* @page "/sell"
 @rendermode InteractiveServer
 
 @using IMS.UseCases.Activities
@@ -15,10 +15,10 @@
 
 @inject IJSRuntime JSRuntime
 
-@attribute [Authorize(Policy = "Sales")]
+@attribute [Authorize(Policy = "Sales")] *@
 
 
-<h3>Sell Product</h3>
+@* <h3>Sell Product</h3>
 <br />
 <EditForm Model="sellViewModel" OnValidSubmit="Sell" id="sell-form">
     <DataAnnotationsValidator />
@@ -34,10 +34,9 @@
             <div class="form-group">
                 <IMS.WebApp.Controls.Common.AutoCompleteComponent Label="Product to Sell" SearchFunction="SearchProduct" OnItemSelected="OnItemSelected" />
                 <br />
-                @* @selectedItem?.Name *@
-                <input type="hidden" value="@sellViewModel.ProductId" />
+                <input type="hidden" value="@sellViewModel.ProductId" /> *@
 
-                @if (sellViewModel.ProductId > 0 && sellViewModel.UnitPrice >= 0)
+                @* @if (sellViewModel.ProductId > 0 && sellViewModel.UnitPrice >= 0)
                 {
                     <text>Price: </text>
                     @sellViewModel.UnitPrice.ToString("c");
@@ -55,9 +54,9 @@
     <button type="submit" class="btn btn-primary">Sell</button>
 
 
-</EditForm>
+</EditForm> *@
 
-
+@* 
 @code {
     private SellViewModel sellViewModel = new SellViewModel();
 
@@ -108,3 +107,4 @@
         sellViewModel.UnitPrice = this.selectedProduct.Price;
     }
 }
+ *@

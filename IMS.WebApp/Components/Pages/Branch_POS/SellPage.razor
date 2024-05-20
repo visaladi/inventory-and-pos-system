@@ -47,8 +47,11 @@
                     <tr>
                         <td><img src="@item.Product.ImgUrl" width="50" height="50" /></td>
                         <td>@item.Product.ProductName</td>
-                        <td>@item.Quantity</td>
-                        <td>@(item.Product.Price * item.Quantity)</td>
+                        @* <td>@item.Quantity</td> *@
+                        <td>
+                            <InputNumber @bind-Value="item.QuantityToSell" class="form-control" />
+                        </td>
+                        <td>@(item.Product.Price * item.QuantityToSell)</td>
                         <td>
                             <button @onclick="@(() => SelectItemForSale(item))">Sell</button>
                         </td>
@@ -65,41 +68,90 @@
 @code {
     [Parameter]
     public string UserId { get; set; }
-    private List<CartItem> cartItems;
+    private List<CartItemViewModel> cartItems;
     private SellViewModel sellViewModel = new SellViewModel();
 
     // private Product? selectedProduct = null;
     protected override async Task OnInitializedAsync()
     {
-        cartItems = (await ShoppingCartService.GetCartByUserIdAsync(UserId))?.Items?.ToList() ?? new List<CartItem>();
+        var cart = await ShoppingCartService.GetCartByUserIdAsync(UserId);
+        cartItems = cart?.Items?.Select(ci => new CartItemViewModel
+            {
+                CartItemId = ci.CartItemId,
+                ProductId = ci.ProductId,
+                Quantity = ci.Quantity,
+                // QuantityToSell = 0,
+                QuantityToSell = ci.Quantity,
+                UnitPrice = ci.Product.Price,
+                Product = ci.Product
+            }).ToList() ?? new List<CartItemViewModel>();
+
     }
 
-    private void SelectItemForSale(CartItem item)
+    private void SelectItemForSale(CartItemViewModel item)
     {
-        sellViewModel.ProductId = item.ProductId;
-        sellViewModel.Product = item.Product;
-        sellViewModel.UnitPrice = item.Product.Price;
-        sellViewModel.QuantityToSell = item.Quantity;
+        if (item.QuantityToSell > 0 && item.QuantityToSell <= item.Quantity)
+        {
+            var sellItem = new SellItemViewModel
+                {
+                    CartItemId = item.CartItemId,
+                    ProductId = item.ProductId,
+                    Product = item.Product,
+                    UnitPrice = item.UnitPrice,
+                    QuantityToSell = item.QuantityToSell
+                };
+
+            sellViewModel.ItemsToSell.Add(sellItem);
+        }
+
     }
 
 
     private async Task Sell()
     {
-        if (sellViewModel.Product != null)
+        foreach (var item in sellViewModel.ItemsToSell)
         {
-            await SellProductUseCase.ExecuteAsync(
-                sellViewModel.SalesOrderNumber,
-                sellViewModel.Product,
-                sellViewModel.QuantityToSell,
-                sellViewModel.UnitPrice
-            );
+            if (item.Product != null)
+            {
+                await SellProductUseCase.ExecuteAsync(
+                    sellViewModel.SalesOrderNumber,
+                    item.Product,
+                    item.QuantityToSell,
+                    item.UnitPrice
+                );
 
-            // Update cart and product quantities
-            await ShoppingCartService.RemoveCartItemAsync(cartItems.First(ci => ci.ProductId == sellViewModel.ProductId).CartItemId);
-            cartItems = (await ShoppingCartService.GetCartByUserIdAsync(UserId))?.Items?.ToList() ?? new List<CartItem>();
+                // await ShoppingCartService.RemoveCartItemAsync(item.CartItemId);
+                var cartItem = cartItems.FirstOrDefault(ci => ci.CartItemId == item.CartItemId);
+                if (cartItem != null)
+                {
+                    cartItem.Quantity -= item.QuantityToSell;
+                    if (cartItem.Quantity <= 0)
+                    {
+                        cartItems.Remove(cartItem);
+                        await ShoppingCartService.RemoveCartItemAsync(item.CartItemId);
+                    }
+                    else
+                    {
+                        await ShoppingCartService.UpdateCartItemAsync(cartItem.CartItemId, cartItem.Quantity);
+                    }
+                }
 
-            sellViewModel = new SellViewModel();
+            }
         }
+
+        cartItems = (await ShoppingCartService.GetCartByUserIdAsync(UserId))?.Items?.Select(ci => new CartItemViewModel
+            {
+                CartItemId = ci.CartItemId,
+                ProductId = ci.ProductId,
+                Quantity = ci.Quantity,
+                // QuantityToSell = 0,
+                QuantityToSell = ci.Quantity,
+                UnitPrice = ci.Product.Price,
+                Product = ci.Product
+            }).ToList() ?? new List<CartItemViewModel>();
+
+        sellViewModel = new SellViewModel();
+
     }
 
     public async Task<List<ItemViewModel>?> SearchProduct(string name)

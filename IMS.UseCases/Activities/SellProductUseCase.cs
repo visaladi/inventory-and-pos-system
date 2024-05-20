@@ -32,10 +32,13 @@ namespace IMS.UseCases.Activities
 
         public async Task ExecuteAsync(string salesOrderNumber, Product product, int quantity, double unitPrice)
         {
-            await this.productTransactionRepository.SellProductAsync(salesOrderNumber, product, quantity, unitPrice);
-
-            product.Quantity -= quantity;
-            await this.productRepository.UpdateProductAsync(product);
+            var prod = await productRepository.GetProductByIdAsync(product.ProductID);
+            if (prod != null)
+            {
+                prod.Quantity -= quantity;
+                await productRepository.UpdateProductAsync(prod);
+                await productTransactionRepository.SellProductAsync(salesOrderNumber, product, quantity, unitPrice);
+            }
         }
 
     }
