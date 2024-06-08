@@ -74,10 +74,11 @@
                             <td>@product.ProductName</td>
                             <td>@product.Price</td>
                             <td>@product.Quantity</td>
-                            @* <td><input type="number" min="1" @bind="selectedQuantity" width="10px" /></td> *@
                             <td>
-                                <input type="number" min="1" @bind="selectedQuantity" width="10px" />
+                                @* <input type="number" min="1" @bind="selectedQuantity" width="10px" /> *@
                                 @* <input type="number" min="1" @bind="@(selectedQuantity[product.ProductID])" /> *@
+                                @* <input type="number" min="1" @bind="@(product.BranchQty)" class="form-control" @oninput="@(e => UpdateSelectedQuantity(product.BranchQty))" /> *@
+                                <input type="number" min="1" @bind="quantities[product.ProductID]" class="form-control" />
                                 <button @onclick="@(() => AddToCart(product.ProductID))">Add to Cart</button>
                             </td>
                         </tr>
@@ -94,8 +95,9 @@
     private IEnumerable<Product> products;
     private string selectedUserId;
     private List<IdentityUser>? users;
-    private int selectedQuantity = 1;
+    private int selectedQuantity;
 
+    private Dictionary<int, int> quantities = new Dictionary<int, int>();
 
     protected override async Task OnInitializedAsync()
     {
@@ -112,13 +114,19 @@
         {
             errorMsg = $"Error retrieving users: {ex.Message}";
         }
+
+        // Initialize the quantities dictionary with default values
+        foreach (var product in products)
+        {
+            quantities[product.ProductID] = 0;
+            // quantities[product.ProductID] = 1; // Default quantity set to 1
+        }
     }
 
     private async Task AddToCart(int productId)
     {
 
         #region AddToSelectedBranch & DeductQuantity - Working!!!
-
 
         if (string.IsNullOrEmpty(selectedUserId))
         {
@@ -132,6 +140,12 @@
         // Check if the product exists
         if (product != null)
         {
+            if (!quantities.TryGetValue(productId, out var selectedQuantity))
+            {
+                errorMsg = "No quantity selected for this product!";
+                return;
+            }
+
             // Deduct the selected quantity from the product inventory
             product.Quantity -= selectedQuantity;
 
@@ -139,8 +153,7 @@
             await ProductRepository.UpdateProductAsync(product);
 
             // Add the item to the cart
-            int qty = selectedQuantity;
-            await ShoppingCartService.AddItemToCartAsync(selectedUserId, productId, qty);
+            await ShoppingCartService.AddItemToCartAsync(selectedUserId, productId, selectedQuantity);
 
             errorMsg = $"{selectedQuantity} {product.ProductName} added to {selectedUserId}'s cart";
         }
@@ -148,6 +161,8 @@
         {
             errorMsg = "Product not found!";
         }
+
+        products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
 
         #endregion
 
