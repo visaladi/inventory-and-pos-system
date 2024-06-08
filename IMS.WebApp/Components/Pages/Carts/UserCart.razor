@@ -8,43 +8,53 @@
 @using Microsoft.AspNetCore.Components.Authorization
 @inject AuthenticationStateProvider AuthenticationStateProvider
 
-<h1>Logged In User - @email</h1>
-<h1>Cart User - @UserId</h1>
+<CascadingAuthenticationState>
 
-@if (cart != null && cart.Items != null && cart.Items.Any())
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Product Image</th>
-                <th>Product Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in cart.Items)
-            {
+    <h1>Logged In User - @email</h1>
+    <h1>Cart User - @UserId</h1>
+
+    @if (cart != null && cart.Items != null && cart.Items.Any())
+    {
+        <table class="table">
+            <thead>
                 <tr>
-                    <td><img src="@item.Product.ImgUrl" width="50" height="50" /></td>
-                    <td>@item.Product.ProductName</td>
-                    <td>@item.Quantity</td>
-                    <td>@(item.Product.Price * item.Quantity)</td>
-                    <td>
-                        <button @onclick="@(() => RemoveFromCart(item.CartItemId))">Remove</button>
-                    </td>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th></th>
                 </tr>
-            }
-        </tbody>
-    </table>
-}
-else
-{
-    <p>Your cart is currently empty.</p>
-}
+            </thead>
+            <tbody>
+                @foreach (var item in cart.Items)
+                {
+                    <tr>
+                        <td><img src="@item.Product.ImgUrl" width="50" height="50" /></td>
+                        <td>@item.Product.ProductName</td>
+                        <td>@item.Quantity</td>
+                        <td>@(item.Product.Price * item.Quantity)</td>
 
-<button type="button" class="btn btn-primary" @onclick="SellPage">Go To POS</button>
+                        <AuthorizeView Policy="Admin">
+                            <Authorized>
+                                <td>
+                                    <button @onclick="@(() => RemoveFromCart(item.CartItemId))">Remove</button>
+                                </td>
+                            </Authorized>
+                        </AuthorizeView>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Your cart is currently empty.</p>
+    }
+
+    <button type="button" class="btn btn-primary" @onclick="SellPage">Go To POS</button>
+
+</CascadingAuthenticationState>
 
 @code {
     [Parameter]
@@ -71,7 +81,6 @@ else
     {
         NavigationManager.NavigateTo($"/sellpage/{UserId}");
     }
-
 
 }
 

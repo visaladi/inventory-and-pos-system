@@ -1,6 +1,4 @@
-﻿@* This Page has a Binding Problem with the "Branch Qty" Input Tag *@
-
-@page "/branchproduct"
+﻿@page "/branchproduct"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 
@@ -45,7 +43,6 @@
 @errorMsg
 
 
-
 <div class="row">
     @if (products == null)
     {
@@ -75,17 +72,15 @@
                             <td>@product.Price</td>
                             <td>@product.Quantity</td>
                             <td>
-                                @* <input type="number" min="1" @bind="selectedQuantity" width="10px" /> *@
-                                @* <input type="number" min="1" @bind="@(selectedQuantity[product.ProductID])" /> *@
-                                @* <input type="number" min="1" @bind="@(product.BranchQty)" class="form-control" @oninput="@(e => UpdateSelectedQuantity(product.BranchQty))" /> *@
                                 <input type="number" min="1" @bind="quantities[product.ProductID]" class="form-control" />
-                                <button @onclick="@(() => AddToCart(product.ProductID))">Add to Cart</button>
+                                @* <button @onclick="@(() => AddToCart(product.ProductID))">Add to Cart</button> *@
                             </td>
                         </tr>
                     }
                 }
             </tbody>
         </table>
+        <button class="btn btn-primary" @onclick="AddAllToCart">Add All to Cart</button>
     }
 </div>
 
@@ -105,7 +100,6 @@
         email = authState.User.Identity?.Name;
         products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
 
-
         try
         {
             users = UserManager.Users.ToList();
@@ -115,58 +109,71 @@
             errorMsg = $"Error retrieving users: {ex.Message}";
         }
 
-        // Initialize the quantities dictionary with default values
         foreach (var product in products)
         {
             quantities[product.ProductID] = 0;
-            // quantities[product.ProductID] = 1; // Default quantity set to 1
         }
     }
 
-    private async Task AddToCart(int productId)
+    #region Add To Cart
+    // private async Task AddToCart(int productId)
+    // {
+    //     if (string.IsNullOrEmpty(selectedUserId))
+    //     {
+    //         errorMsg = "No User is Selected!";
+    //         return;
+    //     }
+    //     var product = await ProductRepository.GetProductByIdAsync(productId);
+
+    //     if (product != null)
+    //     {
+    //         if (!quantities.TryGetValue(productId, out var selectedQuantity))
+    //         {
+    //             errorMsg = "No quantity selected for this product!";
+    //             return;
+    //         }
+    //         product.Quantity -= selectedQuantity;
+
+    //         await ProductRepository.UpdateProductAsync(product);
+
+    //         await ShoppingCartService.AddItemToCartAsync(selectedUserId, productId, selectedQuantity);
+
+    //         errorMsg = $"{selectedQuantity} {product.ProductName} added to {selectedUserId}'s cart";
+    //     }
+    //     else
+    //     {
+    //         errorMsg = "Product not found!";
+    //     }
+    //     products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
+    // }
+    #endregion
+
+    private async Task AddAllToCart()
     {
-
-        #region AddToSelectedBranch & DeductQuantity - Working!!!
-
         if (string.IsNullOrEmpty(selectedUserId))
         {
             errorMsg = "No User is Selected!";
             return;
         }
 
-        // Get the selected product
-        var product = await ProductRepository.GetProductByIdAsync(productId);
-
-        // Check if the product exists
-        if (product != null)
+        foreach (var product in products)
         {
-            if (!quantities.TryGetValue(productId, out var selectedQuantity))
+            if (product != null)
             {
-                errorMsg = "No quantity selected for this product!";
-                return;
+                if (quantities.TryGetValue(product.ProductID, out var selectedQuantity) && selectedQuantity > 0)
+                {
+                    product.Quantity -= selectedQuantity;
+                    await ProductRepository.UpdateProductAsync(product);
+                    await ShoppingCartService.AddItemToCartAsync(selectedUserId, product.ProductID, selectedQuantity);
+
+                    errorMsg = $"{selectedQuantity} {product.ProductName} added to {selectedUserId}'s cart";
+                }
             }
-
-            // Deduct the selected quantity from the product inventory
-            product.Quantity -= selectedQuantity;
-
-            // Update the product quantity in the repository
-            await ProductRepository.UpdateProductAsync(product);
-
-            // Add the item to the cart
-            await ShoppingCartService.AddItemToCartAsync(selectedUserId, productId, selectedQuantity);
-
-            errorMsg = $"{selectedQuantity} {product.ProductName} added to {selectedUserId}'s cart";
-        }
-        else
-        {
-            errorMsg = "Product not found!";
         }
 
         products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
-
-        #endregion
-
     }
+
 
     private async Task GoTo_Cart(string userId)
     {

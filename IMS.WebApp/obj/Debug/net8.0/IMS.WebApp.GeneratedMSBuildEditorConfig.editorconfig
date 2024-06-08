@@ -66,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xQcm9kdWN0TGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Reports/BranchProductsReport.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzXEJyYW5jaFByb2R1Y3RzUmVwb3J0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Reports/ProductTransactionReport.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzXFByb2R1Y3RUcmFuc2FjdGlvblJlcG9ydC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

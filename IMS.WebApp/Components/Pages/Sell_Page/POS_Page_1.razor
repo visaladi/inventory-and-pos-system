@@ -32,7 +32,7 @@
 
         <div class="form-group">
             <label for="po">Sell Order</label>
-            <InputText id="po" class="form-control" @bind-Value="sellViewModel.SalesOrderNumber"></InputText>
+            <InputText id="po" class="form-control" @bind-Value="sellViewModel.SalesOrderNumber" readonly></InputText>
         </div>
 
         <table class="table">
@@ -57,13 +57,12 @@
                             <InputNumber @bind-Value="item.QuantityToSell" class="form-control" />
                         </td>
                         <td>@(item.Product.Price * item.QuantityToSell)</td>
-                        <td>
-                            <button @onclick="@(() => SelectItemForSale(item))">Sell</button>
-                        </td>
                     </tr>
                 }
             </tbody>
         </table>
+
+        <button type="submit" class="btn btn-primary">Sell</button>
 
     </EditForm>
 
@@ -83,7 +82,6 @@
 
     protected override async Task OnInitializedAsync()
     {
-
         var cart = await ShoppingCartService.GetCartByUserIdAsync(UserId);
         cartItems = cart?.Items?.Select(ci => new CartItemViewModel
             {
@@ -91,32 +89,32 @@
                 ProductId = ci.ProductId,
                 Quantity = ci.Quantity,
                 QuantityToSell = 0,
-                // QuantityToSell = ci.Quantity,
                 UnitPrice = ci.Product.Price,
                 Product = ci.Product
             }).ToList() ?? new List<CartItemViewModel>();
 
+        // Generate sales order number
+        sellViewModel.SalesOrderNumber = GenerateSalesOrderNumber();
+
     }
 
-    private void SelectItemForSale(CartItemViewModel item)
+    private string GenerateSalesOrderNumber()
     {
-        if (item.QuantityToSell > 0 && item.QuantityToSell <= item.Quantity)
-        {
-            var sellItem = new SellItemViewModel
-                {
-                    CartItemId = item.CartItemId,
-                    ProductId = item.ProductId,
-                    Product = item.Product,
-                    UnitPrice = item.UnitPrice,
-                    QuantityToSell = item.QuantityToSell,
-                    SoldQuantity = item.QuantityToSell
-                };
+        // return $"SO-{DateTime.Now:yyyyMMddHHmmss}-{UserId[0,3]}";
 
-            sellViewModel.ItemsToSell.Add(sellItem);
-        }
 
+        var now = DateTime.Now;
+        var year = now.ToString("yy"); // Last 2 digits of the year
+        var month = now.ToString("MM"); // Month number
+        var day = now.ToString("dd"); // Day
+        var hour = now.ToString("HH"); // Hour
+        var minute = now.ToString("mm"); // Minute
+                                         // var second = now.ToString("ss"); // Second
+
+        var branchIdPart = UserId.Length >= 3 ? UserId.Substring(0, 3) : UserId;
+
+        return $"SO-{year}{month}{day}{hour}{minute}-{branchIdPart}";
     }
-
 
     private async Task Sell()
     {
@@ -125,51 +123,46 @@
         var userId = user.FindFirstValue(ClaimTypes.NameIdentifier);
         UserEmail = authState.User.Identity?.Name;
 
-        foreach (var item in sellViewModel.ItemsToSell)
+        foreach (var item in cartItems)
         {
-            if (item.Product != null)
+            if (item.QuantityToSell > 0 && item.QuantityToSell <= item.Quantity)
             {
                 await SellProductUseCase.ExecuteAsync(
                     sellViewModel.SalesOrderNumber,
                     item.Product,
                     item.QuantityToSell,
                     item.UnitPrice,
-
                     UserId, // Pass user information
                     UserEmail
                 );
 
-                var cartItem = cartItems.FirstOrDefault(ci => ci.CartItemId == item.CartItemId);
-                if (cartItem != null)
+                item.Quantity -= item.QuantityToSell;
+                if (item.Quantity <= 0)
                 {
-                    cartItem.Quantity -= item.QuantityToSell;
-                    if (cartItem.Quantity <= 0)
-                    {
-                        cartItems.Remove(cartItem);
-                        await ShoppingCartService.RemoveCartItemAsync(item.CartItemId);
-                    }
-                    else
-                    {
-                        await ShoppingCartService.UpdateCartItemAsync(cartItem.CartItemId, cartItem.Quantity);
-                    }
+                    await ShoppingCartService.RemoveCartItemAsync(item.CartItemId);
+                }
+                else
+                {
+                    await ShoppingCartService.UpdateCartItemAsync(item.CartItemId, item.Quantity);
                 }
             }
         }
 
+        // Refresh the cartItems after selling
         cartItems = (await ShoppingCartService.GetCartByUserIdAsync(UserId))?.Items?.Select(ci => new CartItemViewModel
             {
                 CartItemId = ci.CartItemId,
                 ProductId = ci.ProductId,
                 Quantity = ci.Quantity,
-                // QuantityToSell = ci.Quantity,
                 QuantityToSell = 0,
                 UnitPrice = ci.Product.Price,
                 Product = ci.Product
             }).ToList() ?? new List<CartItemViewModel>();
 
-        sellViewModel = new SellViewModel();
-
+        // Generate a new sales order number after selling
+        sellViewModel.SalesOrderNumber = GenerateSalesOrderNumber();
     }
+
 
     public async Task<List<ItemViewModel>?> SearchProduct(string name)
     {
