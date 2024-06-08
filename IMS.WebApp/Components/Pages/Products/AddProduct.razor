@@ -8,7 +8,7 @@
 @inject IAddProductUseCase AddProductUseCase
 @inject NavigationManager NavigationManager
 
-@attribute [Authorize(Policy = "Admin")]
+@* @attribute [Authorize(Policy = "Admin")] *@
 
 <h3>Add Product</h3>
 <br />
@@ -24,19 +24,19 @@
 
     <div class="form-group">
         <label for="quantity">Quantity</label>
-        <InputNumber id="quantity" class="form-control" @bind-Value="product.Quantity" />
+        <InputNumber id="name" class="form-control" @bind-Value="product.Quantity" />
     </div>
 
     <div class="form-group">
         <label for="price">Price</label>
-        <InputNumber id="price" class="form-control" @bind-Value="product.Price" />
+        <InputNumber id="name" class="form-control" @bind-Value="product.Price" />
     </div>
 
 
 
     <div class="form-group">
-        <label for="image">Image</label>
-        <InputFile id="image" class="form-control" @bind-Value="product.ImgUrl" OnChange="LoadFiles" />
+        <label for="price">Price</label>
+        <InputFile id="name" class="form-control" @bind-Value="product.ImgUrl" OnChange="LoadFiles" />
     </div>
 
 
@@ -49,7 +49,7 @@
 
 
 @code {
-    private Product product { get; set; }  = new Product();
+    private Product product = new Product();
 
     private List<IBrowserFile> loadedFiles = new();
 

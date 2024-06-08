@@ -12,7 +12,7 @@ namespace IMS.WebApp.ViewModelsValidations
             //{
             //    if (sellViewModel.Product != null)
             //    {
-            //        if(sellViewModel.Product.Quantity < sellViewModel.QuantityToSell)
+            //        if (sellViewModel.Product.Quantity < sellViewModel.QuantityToSell)
             //        {
             //            return new ValidationResult(
             //                                $"There is not enough left to Sell. Only {sellViewModel.Product.Quantity} available",
@@ -20,7 +20,6 @@ namespace IMS.WebApp.ViewModelsValidations
             //        }
             //    }
             //}
-
             return ValidationResult.Success;
         }
     }

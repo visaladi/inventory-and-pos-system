@@ -6,7 +6,7 @@ namespace IMS.WebApp.ViewModels
     {
         public int CartItemId { get; set; }
         public int ProductId { get; set; }
-        public int QuantityToSell { get; set; }
+        public int QuantityToSell { get; set; } = 0;
         public double UnitPrice { get; set; }
         public Product? Product { get; set; }
 

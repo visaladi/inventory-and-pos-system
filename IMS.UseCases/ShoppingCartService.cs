@@ -1,6 +1,11 @@
 ﻿using IMS.CoreBusiness;
 using IMS.UseCases.PluginInterfaces;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace IMS.UseCases
 {
@@ -19,13 +24,6 @@ namespace IMS.UseCases
         {
             if (string.IsNullOrEmpty(userId))
             {
-                // Handle case where user is not selected (null or empty userId)
-                // Here you can choose an approach based on your needs:
-                //  - Throw an exception (if critical)
-                //  - Log a warning message
-                //  - Display an error message to the user
-                //throw new ArgumentNullException(nameof(userId), "User ID cannot be null or empty."); // Example: Throw exception
-
                 logger.LogWarning("UserId Cannot be Null or Empty");
                 return;
             }
@@ -50,5 +48,6 @@ namespace IMS.UseCases
         {
             await cartRepository.RemoveCartItemAsync(cartItemId);
         }
+
     }
 }

@@ -15,3 +15,4 @@ namespace IMS.UseCases.PluginInterfaces
         Task RemoveCartItemAsync(int cartItemId);
     }
 }
+

@@ -1,10 +1,12 @@
-﻿@using Microsoft.AspNetCore.Components.Web
+﻿@* This Component is used to handle Search Results Display *@
+
+@using Microsoft.AspNetCore.Components.Web
 
 <br />
 <div class="form-group">
     <label for="search">@Label</label>
-    <input type="text" class="form-control" @bind-value="userInput" @bind-value:event="oninput" 
-           onkeyup="OnPressKeys"/>
+    <input type="text" class="form-control" @bind-value="userInput" @bind-value:event="oninput"
+           onkeyup="OnPressKeys" />
 </div>
 
 @if (searchResults != null && searchResults.Count > 0)
@@ -22,7 +24,7 @@
                     itemIndex++;
                 }
             }
-            
+
         </ul>
     </div>
 }
@@ -54,7 +56,7 @@
             _userInput = value;
             if (!string.IsNullOrWhiteSpace(_userInput) && SearchFunction != null)
             {
-                if(this.selectedItem?.Name != _userInput)
+                if (this.selectedItem?.Name != _userInput)
                 {
                     ViewItemsAsync();
                 }
@@ -80,10 +82,9 @@
 
     private void OnSelectItem(ItemViewModel item)
     {
-        // this.searchResults = null;
         ClearCurrentItem();
 
-        if (item != null) 
+        if (item != null)
         {
             this.selectedItem = item;
             this.userInput = item.Name;

@@ -1,4 +1,5 @@
 ﻿using IMS.CoreBusiness;
+using IMS.CoreBusiness.DTO;
 using IMS.UseCases.Activities.Interfaces;
 using IMS.UseCases.PluginInterfaces;
 using System;
@@ -22,24 +23,33 @@ namespace IMS.UseCases.Activities
             this.productRepository = productRepository;
         }
 
-        //public async Task ExecuteAsync(string salesOrderNumber, Product product, int quantity, double unitPrice, string doneBy)
-        //{
-        //    await this.productTransactionRepository.SellProductAsync(salesOrderNumber, product, quantity, unitPrice, doneBy);
-
-        //    product.Quantity -= quantity;
-        //    await this.productRepository.UpdateProductAsync(product);
-        //}
-
-        public async Task ExecuteAsync(string salesOrderNumber, Product product, int quantity, double unitPrice)
+        public async Task ExecuteAsync(string salesOrderNumber, Product product, int quantity, double unitPrice, string userid, string useremail)
         {
             var prod = await productRepository.GetProductByIdAsync(product.ProductID);
             if (prod != null)
             {
                 prod.Quantity -= quantity;
                 await productRepository.UpdateProductAsync(prod);
-                await productTransactionRepository.SellProductAsync(salesOrderNumber, product, quantity, unitPrice);
             }
-        }
 
+            // To add Sold Quantity & Total Price to the Report
+            var transaction = new ProductTransaction
+            {
+                ActivityType = ProductTransactionType.SellProduct,
+                SONumber = salesOrderNumber,
+                ProductId = product.ProductID,
+                QauntityBefore = product.Quantity,
+                QauntityAfter = product.Quantity - quantity,
+                TransactionDate = DateTime.Now,
+                UnitPrice = unitPrice,
+                SoldQuantity = quantity,
+                TotalPrice = quantity * unitPrice,
+
+                UserId = userid // Store user information
+            };
+
+            await productTransactionRepository.SellProductAsync(transaction);
+
+        }
     }
 }

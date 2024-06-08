@@ -28,7 +28,6 @@
                         @user.Email
                     </td>
                     <td>
-                        @* <button type="button" class="btn btn-link" onclick="@(()=> ManageUser(user.Id))"> *@
                         <button type="button" class="btn btn-link" onclick="@(()=> ManageUser(user))">
                             Manage
                         </button>
@@ -45,7 +44,6 @@
     protected override void OnInitialized()
     {
         base.OnInitialized();
-
         users = UserManager.Users.ToList();
     }
 
@@ -53,6 +51,5 @@
     {
         NavigationManager.NavigateTo($"/manageuser/{user.Id}");
     }
-
 
 }

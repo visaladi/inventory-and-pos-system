@@ -1,4 +1,5 @@
 ﻿using IMS.CoreBusiness;
+using IMS.CoreBusiness.DTO;
 using IMS.WebApp.ViewModelsValidations;
 using System.ComponentModel.DataAnnotations;
 
@@ -19,7 +20,5 @@ namespace IMS.WebApp.ViewModels
         public int QuantityToProduce { get; set; }
 
         public Product? Product { get; set; } = null;
-
-        //public double ProductPrice { get; set; }
     }
 }

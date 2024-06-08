@@ -1,4 +1,6 @@
-﻿@page "/branchproduct"
+﻿@* This Page has a Binding Problem with the "Branch Qty" Input Tag *@
+
+@page "/branchproduct"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
 
@@ -17,8 +19,10 @@
 @inject IShoppingCartService ShoppingCartService
 @inject IViewProductsByNameUseCase ViewProductsByNameUseCase
 
+@*
 @using Microsoft.AspNetCore.Authorization
-@* @attribute [Authorize(Policy = "Admin")] *@
+@attribute [Authorize(Policy = "Admin")]
+*@
 
 
 <h1>Products List - @email</h1>
@@ -28,7 +32,7 @@
     <div class="col-md-6">
         <label for="selectedUser">Select User:</label>
         <select @bind="selectedUserId" class="form-control">
-            <option></option>
+            <option>Select Branch</option>
             @foreach (var user in users)
             {
                 <option value="@user.Id">@user.UserName</option>
@@ -37,6 +41,7 @@
     </div>
 }
 <button @onclick="@(() => GoTo_Cart(selectedUserId))">Go to Cart</button>
+
 @errorMsg
 
 
@@ -92,8 +97,6 @@
     private int selectedQuantity = 1;
 
 
-
-
     protected override async Task OnInitializedAsync()
     {
         var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
@@ -103,59 +106,16 @@
 
         try
         {
-            // users = await UserManager.GetUsersAsync();
             users = UserManager.Users.ToList();
-            // users = UserManager.Users.ToList();
         }
         catch (Exception ex)
         {
             errorMsg = $"Error retrieving users: {ex.Message}";
         }
-
-        // var isAdmin = authState.User.IsInRole("Admin");
-        // if (isAdmin)
-        // {
-        //     users = await UserManager.GetUsersInRoleAsync("Sales");
-        // }
     }
 
     private async Task AddToCart(int productId)
     {
-        #region AddToCart
-
-        // var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        // var user = await UserManager.GetUserAsync(authState.User);
-        // var userId = user?.Id;
-
-        // if (userId != null)
-        // {
-        //     await ShoppingCartService.AddItemToCartAsync(userId, productId, 1);
-        // }
-        // else
-        // {
-        // }
-
-        // NavigationManager.NavigateTo($"/usercart/{userId}");
-
-        #endregion
-
-        #region AddToSelectedBranch - Working!!!
-
-        // if (string.IsNullOrEmpty(selectedUserId))
-        // {
-        //     errorMsg = "No User is Selected!";
-        //     return;
-        // }
-
-        // // Retrieve the entered quantity for the product
-        // // int quantity = selectedQuantity.ContainsKey(productId) ? selectedQuantity[productId] : 1;
-
-        // int qty = selectedQuantity;
-
-        // await ShoppingCartService.AddItemToCartAsync(selectedUserId, productId, qty);
-        // errorMsg = $"{productId} is added into the {selectedUserId}'s cart";
-
-        #endregion
 
         #region AddToSelectedBranch & DeductQuantity - Working!!!
 
@@ -198,45 +158,4 @@
         NavigationManager.NavigateTo($"/usercart/{userId}");
     }
 
-    // private async Task OnUserSelected(string userId)
-    // {
-    //     selectedUserId = userId;
-    // }
-
-    #region SelectOption
-
-    // public record Topping(int Id, string Name);
-    // public string selectedTopping { get; set; } = "No Topping";
-    // public List<Topping> toppings = new List<Topping>()
-    // {
-    //     new Topping(1, "No Topping"),
-    //     new Topping(2, "Cheese"),
-    //     new Topping(3, "Onions"),
-    //     new Topping(4, "Pickles"),
-    //     new Topping(5, "Avocado"),
-    //     new Topping(6, "Lettuce")
-    // };
-
-    #endregion
-
-    #region GetUserEmail
-
-    // private string GetUserEmail()
-    // {
-    // var claimsPrincipal = await HttpContext.GetCurrentUser();
-    // if (claimsPrincipal?.Identity?.IsAuthenticated == true)
-    // {
-    //     return claimsPrincipal.FindFirstValue(ClaimTypes.Email);
-    // }
-        // return "";
-
-
-    // if (HttpContextAccessor.HttpContext?.User?.Identity?.IsAuthenticated ?? false)
-    // {
-    //     return httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Email);
-    // }
-
-    // return "Not Signed In";
-    // }
-    #endregion
 }

@@ -1,5 +1,8 @@
 ﻿@page "/sellpage/{UserId}"
 @rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
 
 @using IMS.UseCases
 @using IMS.UseCases.Activities
@@ -8,6 +11,7 @@
 @using IMS.UseCases.Products.interfaces
 @using IMS.WebApp.ViewModels
 @using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
 @using static IMS.WebApp.Controls.Common.AutoCompleteComponent
 
 @inject IViewProductsByNameUseCase ViewProductsByNameUseCase
@@ -17,7 +21,7 @@
 
 @inject IJSRuntime JSRuntime
 
-<h3>Sell Page for @UserId</h3>
+<h3>Sell Page for "@UserId"</h3>
 <br />
 
 @if (cartItems != null && cartItems.Any())
@@ -36,7 +40,8 @@
                 <tr>
                     <th>Product Image</th>
                     <th>Product Name</th>
-                    <th>Quantity</th>
+                    <th>Branch Qty</th>
+                    <th>Qty to Sell</th>
                     <th>Price</th>
                     <th></th>
                 </tr>
@@ -47,7 +52,7 @@
                     <tr>
                         <td><img src="@item.Product.ImgUrl" width="50" height="50" /></td>
                         <td>@item.Product.ProductName</td>
-                        @* <td>@item.Quantity</td> *@
+                        <td>@item.Quantity</td>
                         <td>
                             <InputNumber @bind-Value="item.QuantityToSell" class="form-control" />
                         </td>
@@ -60,28 +65,33 @@
             </tbody>
         </table>
 
-
     </EditForm>
+
+    <button @onclick="@(() => GoTo_Cart(UserId))">Go to Cart</button>
+
 }
 
 
 @code {
+    public string UserEmail = "";
+
     [Parameter]
     public string UserId { get; set; }
     private List<CartItemViewModel> cartItems;
     private SellViewModel sellViewModel = new SellViewModel();
 
-    // private Product? selectedProduct = null;
+
     protected override async Task OnInitializedAsync()
     {
+
         var cart = await ShoppingCartService.GetCartByUserIdAsync(UserId);
         cartItems = cart?.Items?.Select(ci => new CartItemViewModel
             {
                 CartItemId = ci.CartItemId,
                 ProductId = ci.ProductId,
                 Quantity = ci.Quantity,
-                // QuantityToSell = 0,
-                QuantityToSell = ci.Quantity,
+                QuantityToSell = 0,
+                // QuantityToSell = ci.Quantity,
                 UnitPrice = ci.Product.Price,
                 Product = ci.Product
             }).ToList() ?? new List<CartItemViewModel>();
@@ -98,7 +108,8 @@
                     ProductId = item.ProductId,
                     Product = item.Product,
                     UnitPrice = item.UnitPrice,
-                    QuantityToSell = item.QuantityToSell
+                    QuantityToSell = item.QuantityToSell,
+                    SoldQuantity = item.QuantityToSell
                 };
 
             sellViewModel.ItemsToSell.Add(sellItem);
@@ -109,6 +120,11 @@
 
     private async Task Sell()
     {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+        var userId = user.FindFirstValue(ClaimTypes.NameIdentifier);
+        UserEmail = authState.User.Identity?.Name;
+
         foreach (var item in sellViewModel.ItemsToSell)
         {
             if (item.Product != null)
@@ -117,10 +133,12 @@
                     sellViewModel.SalesOrderNumber,
                     item.Product,
                     item.QuantityToSell,
-                    item.UnitPrice
+                    item.UnitPrice,
+
+                    UserId, // Pass user information
+                    UserEmail
                 );
 
-                // await ShoppingCartService.RemoveCartItemAsync(item.CartItemId);
                 var cartItem = cartItems.FirstOrDefault(ci => ci.CartItemId == item.CartItemId);
                 if (cartItem != null)
                 {
@@ -135,7 +153,6 @@
                         await ShoppingCartService.UpdateCartItemAsync(cartItem.CartItemId, cartItem.Quantity);
                     }
                 }
-
             }
         }
 
@@ -144,8 +161,8 @@
                 CartItemId = ci.CartItemId,
                 ProductId = ci.ProductId,
                 Quantity = ci.Quantity,
-                // QuantityToSell = 0,
-                QuantityToSell = ci.Quantity,
+                // QuantityToSell = ci.Quantity,
+                QuantityToSell = 0,
                 UnitPrice = ci.Product.Price,
                 Product = ci.Product
             }).ToList() ?? new List<CartItemViewModel>();
@@ -159,6 +176,11 @@
         var list = await ViewProductsByNameUseCase.ExecuteAsync(name);
         if (list == null) return null;
         return list.Select(x => new ItemViewModel { Id = x.ProductID, Name = x.ProductName })?.ToList();
+    }
+
+    private async Task GoTo_Cart(string userId)
+    {
+        NavigationManager.NavigateTo($"/usercart/{userId}");
     }
 
 }

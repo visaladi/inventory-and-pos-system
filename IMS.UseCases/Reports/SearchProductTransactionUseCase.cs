@@ -1,6 +1,8 @@
 ﻿using IMS.CoreBusiness;
 using IMS.UseCases.PluginInterfaces;
 using IMS.UseCases.Reports.interfaces;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,22 +14,34 @@ namespace IMS.UseCases.Reports
     public class SearchProductTransactionUseCase : ISearchProductTransactionUseCase
     {
         private readonly IProductTransactionRepository productTransactionRepository;
+        private readonly UserManager<IdentityUser> userManager;
 
-        public SearchProductTransactionUseCase(IProductTransactionRepository productTransactionRepository)
+        public SearchProductTransactionUseCase(
+            IProductTransactionRepository productTransactionRepository, UserManager<IdentityUser> userManager)
         {
             this.productTransactionRepository = productTransactionRepository;
+            this.userManager = userManager;
         }
         public async Task<IEnumerable<ProductTransaction>> ExecuteAsync(
             string productName,
             DateTime? dateFrom,
             DateTime? dateTo,
-            ProductTransactionType? transactionType)
+            ProductTransactionType? transactionType,
+            string userEmail)
         {
 
-            if (dateTo.HasValue) dateTo = dateTo.Value.AddDays(1);
+            List<string> userIds = null;
+            if (!string.IsNullOrWhiteSpace(userEmail))
+            {
+                var users = await userManager.Users
+                    .Where(u => u.Email.Contains(userEmail))
+                    .ToListAsync();
 
-            return await this.productTransactionRepository.GetProductTransactionsAsync(
-                productName, dateFrom, dateTo, transactionType);
+                userIds = users.Select(u => u.Id).ToList();
+            }
+
+            return await productTransactionRepository.GetProductTransactionsAsync(productName, dateFrom, dateTo, transactionType, userIds);
+
         }
     }
 }

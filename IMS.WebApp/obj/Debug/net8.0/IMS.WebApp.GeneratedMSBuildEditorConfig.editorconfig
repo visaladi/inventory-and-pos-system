@@ -34,16 +34,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTG9naW5Db21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Activities/SellProduct.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY3Rpdml0aWVzXFNlbGxQcm9kdWN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Branch_POS/ProductsToCart.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCcmFuY2hfUE9TXFByb2R1Y3RzVG9DYXJ0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Branch_POS/SellPage.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCcmFuY2hfUE9TXFNlbGxQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Carts/UserCart.razor]
@@ -76,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Reports/ProductTransactionReport.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xSZXBvcnRzXFByb2R1Y3RUcmFuc2FjdGlvblJlcG9ydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/Sell_Page/POS_Page_1.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZWxsX1BhZ2VcUE9TX1BhZ2VfMS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hp/Desktop/IMS Github/GithubIMS/inventory-and-pos-system/IMS.WebApp/Components/Pages/UserList/ManageUsers.razor]

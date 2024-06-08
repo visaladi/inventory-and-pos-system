@@ -24,7 +24,6 @@
             </tr>
         </thead>
         <tbody>
-            @* @foreach (var item in cartitems) *@
             @foreach (var item in cart.Items)
             {
                 <tr>
@@ -45,6 +44,8 @@ else
     <p>Your cart is currently empty.</p>
 }
 
+<button type="button" class="btn btn-primary" @onclick="SellPage">Go To POS</button>
+
 @code {
     [Parameter]
     public string UserId { get; set; }
@@ -64,37 +65,13 @@ else
     private async Task RemoveFromCart(int cartItemId)
     {
         await shoppingCartService.RemoveCartItemAsync(cartItemId);
-        // cartitems = await shoppingCartService.GetCartByUserIdAsync(UserId); // Refresh cart items after removal
     }
 
+    private void SellPage()
+    {
+        NavigationManager.NavigateTo($"/sellpage/{UserId}");
+    }
 
-    #region Test 01
-    // // From ChatGPT
-    // private string? email;
-    // private Cart? cart;
-    // private IShoppingCartService cartService;
-
-    // protected override async Task OnInitializedAsync()
-    // {
-    //     var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-    //     email = authState.User.Identity?.Name;
-
-    //     cartService = shoppingCartService;
-    //     if (email != null)
-    //     {
-    //         cart = await cartService.GetCartByUserIdAsync(email);
-    //     }
-    // }
-
-    // private async Task RemoveFromCart(int cartItemId)
-    // {
-    //     await cartService.RemoveCartItemAsync(cartItemId);
-    //     if (email != null)
-    //     {
-    //         cart = await cartService.GetCartByUserIdAsync(email); // Refresh cart after removal
-    //     }
-    // }
-    #endregion
 
 }
 
