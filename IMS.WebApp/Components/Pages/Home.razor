@@ -8,13 +8,10 @@
 <div class="background-container" style="background-image: url('images/patternxl1.png'); ">
 
 
-<div class="row" style="padding:20px">
-    <p class="title-text col-6"> Welcome to cake O' Clock Invenory Management System !</p>
-    <p class="date-time-text col-6 text-end">@currentDateTime.ToString("MMMM dd, yyyy, hh:mm:ss tt")</p>
-</div>
-
-    
-
+    <div class="row" style="padding:20px">
+        <p class="title-text col-6"> Welcome to cake O' Clock Invenory Management System !</p>
+        <p class="date-time-text col-6 text-end">@currentDateTime.ToString("MMMM dd, yyyy, hh:mm:ss tt")</p>
+    </div>
 
     <div class="photos-container">
         <div class="photo-tile">
@@ -29,7 +26,7 @@
             <img src="images/photo3.jpg" alt="Photo 3" />
             <figcaption class="caption">Caption 3</figcaption>
         </div>
- 
+
     </div>
     <div class="photos-container">
         <div class="photo-tile">
@@ -40,11 +37,11 @@
             <img src="images/photo2.jpg" alt="Photo 2" />
             <figcaption class="caption">Caption 2</figcaption>
         </div>
-      
+
 
     </div>
 
-    </div>
+</div>
 
 <ul>
     @foreach (var prd in _products)
