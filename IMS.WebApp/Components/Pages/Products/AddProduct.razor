@@ -8,7 +8,7 @@
 @inject IAddProductUseCase AddProductUseCase
 @inject NavigationManager NavigationManager
 
-@attribute [Authorize(Policy = "Admin")]
+@* @attribute [Authorize(Policy = "Admin")] *@
 
 <h3>Add Product</h3>
 <br />
@@ -46,7 +46,6 @@
     <button type="submit" class="btn btn-outline-primary">Save</button>
     <button type="button" class="btn btn-outline-primary" @onclick="Cancel">Cancel</button>
 </EditForm>
-
 
 @code {
    

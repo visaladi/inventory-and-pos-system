@@ -21,5 +21,6 @@ namespace IMS.CoreBusiness
         [Required]
         public string? ImgUrl { get; set; }
 
+        public int BranchQty { get; set; }
     }
 }
