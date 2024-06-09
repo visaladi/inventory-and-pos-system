@@ -1,0 +1,76 @@
+﻿@page "/sellpage/{UserId}"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+@using System.Security.Claims
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+@using IMS.UseCases
+@using IMS.UseCases.Activities
+@using IMS.UseCases.Activities.Interfaces
+@using IMS.UseCases.Products
+@using IMS.UseCases.Products.interfaces
+@using IMS.WebApp.ViewModels
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@using static IMS.WebApp.Controls.Common.AutoCompleteComponent
+
+@inject IViewProductsByNameUseCase ViewProductsByNameUseCase
+@inject IViewProductByIdUseCase ViewProductByIdUseCase
+@inject ISellProductUseCase SellProductUseCase
+@inject IShoppingCartService ShoppingCartService
+
+@inject IJSRuntime JSRuntime
+
+<h3>Sell Page for "@UserId"</h3>
+<br />
+
+@if (cartItems != null && cartItems.Any())
+{
+    <EditForm Model="sellViewModel" OnValidSubmit="Sell" id="sell-form">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label for="po">Sell Order</label>
+            <InputText id="po" class="form-control" @bind-Value="sellViewModel.SalesOrderNumber" readonly></InputText>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Image</th>
+                    <th>Product Name</th>
+                    <th>Branch Qty</th>
+                    <th>Qty to Sell</th>
+                    <th>Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in cartItems)
+                {
+                    <tr>
+                        <td><img src="@item.Product.ImgUrl" width="50" height="50" /></td>
+                        <td>@item.Product.ProductName</td>
+                        <td>@item.Quantity</td>
+                        <td>
+                            <InputNumber @bind-Value="item.QuantityToSell" class="form-control" />
+                        </td>
+                        <td>@(item.Product.Price * item.QuantityToSell)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <button type="submit" class="btn btn-primary">Sell</button>
+
+    </EditForm>
+
+    <button @onclick="@(() => GoTo_Cart(UserId))">Go to Cart</button>
+
+}
+
+@code {
+    
+}
+

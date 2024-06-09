@@ -1,18 +1,26 @@
 ﻿@page "/productreport"
-@using IMS.UseCases.Reports.interfaces
-@using Microsoft.AspNetCore.Authorization
 @rendermode InteractiveServer
+@using IMS.UseCases.Reports.interfaces
+@using IMS.WebApp.ViewModels
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.EntityFrameworkCore
 
+@inject UserManager<IdentityUser> UserManager
 @inject ISearchProductTransactionUseCase SearchProductTransactionUseCase
 @inject IJSRuntime JSRuntime
 
 @* @attribute [Authorize(Policy = "Admin")] *@
 
-<h3>Product Transactions</h3>
+<h3>Sales Product Transactions</h3>
 <br />
 
 <div class="printarea">
     <div class="row">
+        <div class="col">
+            <label for="so">Sell Order</label>
+            <input type="text" id="so" class="form-control" @bind-value="sellOrder" placeholder="Sell Order" />
+        </div>
         <div class="col">
             <label for="prod">Product Name</label>
             <input type="text" id="prod" class="form-control" @bind-value="prodName" placeholder="Search by Name" />
@@ -25,21 +33,23 @@
             <label for="dt">Date To</label>
             <input type="date" id="dt" class="form-control" @bind-value="dateTo" />
         </div>
+
+
         <div class="col">
-            <label for="at">Activity Type</label>
-            <select id="at" class="form-control" @bind="activityTypeId">
-                <option value="0"></option>
-                @* <option value="1">Produce Product</option> *@
-                <option value="2">Sell Product</option>
+            <label for="userEmail">User Email</label>
+            <select id="userEmail" class="form-control" @bind="selectedUserEmail">
+                <option value="">Select User</option>
+                @foreach (var email in userEmails)
+                {
+                    <option value="@email">@email</option>
+                }
             </select>
         </div>
+
+
         <div class="col">
             <label>&nbsp;</label>
             <button type="button" class="btn btn-primary form-control" @onclick="SearchProducts">Search</button>
-        </div>
-        <div class="col">
-            <label>&nbsp;</label>
-            <button type="button" class="btn btn-primary form-control" @onclick="PrintReport">Print</button>
         </div>
     </div>
     <br />
@@ -48,35 +58,26 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>SO#</th>
                     <th>Date</th>
                     <th>Product</th>
-                    <th>Activity</th>
-                    <th>Qty Before</th>
-                    <th>Qty After</th>
                     <th>Unit Price</th>
-                    <th>SO#</th>
+                    <th>Sold Quantity</th>
+                    <th>Total Price</th>
+                    <th>User Email</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var it in productTransactions)
                 {
                     <tr>
+                        <td>@it.SONumber</td>
                         <td>@it.TransactionDate.ToString("MM/dd/yyyy")</td>
                         <td>@it.Product.ProductName</td>
-                        <td>
-                            @if (it.ActivityType == ProductTransactionType.ProduceProduct)
-                            {
-                                <text>Produce</text>
-                            }
-                            else if (it.ActivityType == ProductTransactionType.SellProduct)
-                            {
-                                <text>Sell</text>
-                            }
-                        </td>
-                        <td>@it.QauntityBefore</td>
-                        <td>@it.QauntityAfter</td>
                         <td>Rs. @it.UnitPrice?.ToString()</td>
-                        <td>@it.SONumber</td>
+                        <td>@it.SoldQuantity</td>
+                        <td>@it.TotalPrice</td>
+                        <td>@(userEmailsDictionary.ContainsKey(it.UserId) ? userEmailsDictionary[it.UserId] : "Unknown")</td>
                     </tr>
                 }
             </tbody>

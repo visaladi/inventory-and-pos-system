@@ -1,90 +1,72 @@
 ﻿using IMS.CoreBusiness;
+using Microsoft.AspNetCore.Identity;
 
 namespace IMS.WebApp.Components.Pages.Branch_POS
 {
     public partial class ProductsToCart
     {
         private string email = "";
+        private string errorMsg = "";
         private IEnumerable<Product> products;
+        private string selectedUserId;
+        private List<IdentityUser>? users;
+        private int selectedQuantity;
+
+        private Dictionary<int, int> quantities = new Dictionary<int, int>();
 
         protected override async Task OnInitializedAsync()
         {
             var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
             email = authState.User.Identity?.Name;
+            products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
+
+            try
+            {
+                users = UserManager.Users.ToList();
+            }
+            catch (Exception ex)
+            {
+                errorMsg = $"Error retrieving users: {ex.Message}";
+            }
+
+            foreach (var product in products)
+            {
+                quantities[product.ProductID] = 0;
+            }
+        }
+
+
+        private async Task AddAllToCart()
+        {
+            if (string.IsNullOrEmpty(selectedUserId))
+            {
+                errorMsg = "No User is Selected!";
+                return;
+            }
+
+            foreach (var product in products)
+            {
+                if (product != null)
+                {
+                    if (quantities.TryGetValue(product.ProductID, out var selectedQuantity) && selectedQuantity > 0)
+                    {
+                        product.Quantity -= selectedQuantity;
+                        await ProductRepository.UpdateProductAsync(product);
+                        await ShoppingCartService.AddItemToCartAsync(selectedUserId, product.ProductID, selectedQuantity);
+
+                        errorMsg = $"{selectedQuantity} {product.ProductName} added to {selectedUserId}'s cart";
+                    }
+                }
+            }
 
             products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
         }
 
 
-        private async Task AddToCart(int productId)
+        private async Task GoTo_Cart(string userId)
         {
-            #region AddToCart_Test
-            // var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-            // var userId = authState.User.Identity?.Name; // Get signed-in user's ID
-
-            // if (userId != null)
-            // {
-            //     await ShoppingCartService.AddItemToCartAsync(userId, productId, 1); // Add 1 unit by default
-            // }
-            // else
-            // {
-            //     // Handle scenario where user is not signed in (e.g., display a message or redirect to login)
-            // }
-
-            // var user = await UserManager.GetUserAsync(await AuthenticationStateProvider.GetAuthenticationStateAsync());
-
-
-
-
-            // var user = await UserManager.GetUserAsync(await AuthenticationStateProvider.GetAuthenticationStateAsync());
-            // var userId = user?.Id;
-            // // var user = await UserManager.GetUserAsync(HttpContext.User);
-            // // var userId = user?.FindFirstValue(ClaimTypes.NameIdentifier); // Assuming UserId is stored in NameIdentifier claim
-
-            // if (userId != null)
-            // {
-            //     await ShoppingCartService.AddItemToCartAsync(userId, productId, 1);
-            // }
-            // else
-            // {
-            //     // Handle scenario where user is not signed in
-            // }
-            #endregion
-
-            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-            var user = await UserManager.GetUserAsync(authState.User);
-            var userId = user?.Id;
-
-            if (userId != null)
-            {
-                await ShoppingCartService.AddItemToCartAsync(userId, productId, 1);
-            }
-            else
-            {
-            }
-
             NavigationManager.NavigateTo($"/usercart/{userId}");
         }
 
-        #region GetUserEmail
-
-        // private string GetUserEmail()
-        // {
-        // var claimsPrincipal = await HttpContext.GetCurrentUser();
-        // if (claimsPrincipal?.Identity?.IsAuthenticated == true)
-        // {
-        //     return claimsPrincipal.FindFirstValue(ClaimTypes.Email);
-        // }
-        // return "";
-
-
-        // if (HttpContextAccessor.HttpContext?.User?.Identity?.IsAuthenticated ?? false)
-        // {
-        //     return httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.Email);
-        // }
-
-        // return "Not Signed In";
-        // }
-        #endregion
     }
 }

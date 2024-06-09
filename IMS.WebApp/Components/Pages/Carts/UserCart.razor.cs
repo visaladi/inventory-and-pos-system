@@ -23,37 +23,12 @@ namespace IMS.WebApp.Components.Pages.Carts
         private async Task RemoveFromCart(int cartItemId)
         {
             await shoppingCartService.RemoveCartItemAsync(cartItemId);
-            // cartitems = await shoppingCartService.GetCartByUserIdAsync(UserId); // Refresh cart items after removal
         }
 
-
-        #region Test 01
-        // // From ChatGPT
-        // private string? email;
-        // private Cart? cart;
-        // private IShoppingCartService cartService;
-
-        // protected override async Task OnInitializedAsync()
-        // {
-        //     var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        //     email = authState.User.Identity?.Name;
-
-        //     cartService = shoppingCartService;
-        //     if (email != null)
-        //     {
-        //         cart = await cartService.GetCartByUserIdAsync(email);
-        //     }
-        // }
-
-        // private async Task RemoveFromCart(int cartItemId)
-        // {
-        //     await cartService.RemoveCartItemAsync(cartItemId);
-        //     if (email != null)
-        //     {
-        //         cart = await cartService.GetCartByUserIdAsync(email); // Refresh cart after removal
-        //     }
-        // }
-        #endregion
+        private void SellPage()
+        {
+            NavigationManager.NavigateTo($"/sellpage/{UserId}");
+        }
 
     }
 }

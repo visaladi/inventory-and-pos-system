@@ -2,8 +2,6 @@
 {
     public partial class ProductList
     {
-        // private List<Product> products = new List<Product>();
-
         private string searchTerm = string.Empty;
 
         private void OnSearchProduct(string searchTerm)

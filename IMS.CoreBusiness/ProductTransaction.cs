@@ -24,7 +24,16 @@ namespace IMS.CoreBusiness
         [Required]
         public DateTime TransactionDate { get; set; }
         [Required]
-        //public string DoneBy { get; set; } = string.Empty;
         public Product? Product { get; set; }
+
+
+        // To add Sold Quantity & Total Price to the Report
+        public int SoldQuantity { get; set; }
+        public double TotalPrice { get; set; }
+
+
+        // To display the branch
+        public string? UserId { get; set; }
+        public string? UserEmail { get; set; } = string.Empty;
     }
 }

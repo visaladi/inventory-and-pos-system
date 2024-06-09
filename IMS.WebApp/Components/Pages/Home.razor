@@ -50,7 +50,7 @@
     @foreach (var prd in _products)
     {
         <img src="@prd.ImgUrl" height="70" width="100" />
-        <li>@prd.ProductName</li>
+        <li>@prd.ProductName - @prd.Quantity Remaining</li>
 
         
     }
