@@ -21,6 +21,8 @@ using Microsoft.Extensions.Logging;
 
 namespace IMS.WebApp.Areas.Identity.Pages.Account
 {
+
+    //[Authorize(Policy = "Admin")]
     public class RegisterModel : PageModel
     {
         private readonly SignInManager<IdentityUser> _signInManager;
@@ -70,6 +72,10 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
+            //[Required]
+            //[Display(Name = "Username")]
+            //public string Username { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -97,8 +103,7 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
-        }
-
+        }                                                                 // Added the Username Property
 
         public async Task OnGetAsync(string returnUrl = null)
         {
@@ -115,6 +120,7 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
                 var user = CreateUser();
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);    // Replaced Input.Email with Input.Username
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
@@ -150,9 +156,9 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
-            return Page();
-        }
+
+            return Page();  // If we got this far, something failed, redisplay form
+        }                   // Changed @ 1 place
 
         private IdentityUser CreateUser()
         {

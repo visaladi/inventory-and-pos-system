@@ -12,11 +12,15 @@
 
 @* @attribute [Authorize(Policy = "Admin")] *@
 
-<h3>Product Transactions</h3>
+<h3>Sales Product Transactions</h3>
 <br />
 
 <div class="printarea">
     <div class="row">
+        <div class="col">
+            <label for="so">Sell Order</label>
+            <input type="text" id="so" class="form-control" @bind-value="sellOrder" placeholder="Sell Order" />
+        </div>
         <div class="col">
             <label for="prod">Product Name</label>
             <input type="text" id="prod" class="form-control" @bind-value="prodName" placeholder="Search by Name" />
@@ -83,6 +87,7 @@
 
 
 @code {
+    private string sellOrder = string.Empty;
     private string prodName = string.Empty;
     private DateTime? dateFrom;
     private DateTime? dateTo;
@@ -113,7 +118,7 @@
     private async Task SearchProducts()
     {
         ProductTransactionType? prodType = (ProductTransactionType)activityTypeId;
-        productTransactions = await SearchProductTransactionUseCase.ExecuteAsync(prodName, dateFrom, dateTo, prodType, selectedUserEmail);
+        productTransactions = await SearchProductTransactionUseCase.ExecuteAsync(sellOrder, prodName, dateFrom, dateTo, prodType, selectedUserEmail);
 
         userEmailsDictionary.Clear();
         foreach (var transaction in productTransactions)

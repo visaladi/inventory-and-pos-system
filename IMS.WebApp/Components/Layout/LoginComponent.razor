@@ -1,8 +1,15 @@
-﻿@* <h3>LoginComponent</h3> *@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Identity
+
+@* @inject IServiceProvider ServiceProvider *@
+@* <h3>LoginComponent</h3> *@
+
+
 <Microsoft.AspNetCore.Components.Authorization.AuthorizeView>
     <Authorized>
         <a href="/identity/account/manage">Profile</a>
         <a href="/identity/account/logout">Sign out</a>
+        @* <a >Sign out</a> *@
     </Authorized>
     <NotAuthorized>
         @* <a href="/identity/account/register">Register</a> *@

@@ -34,11 +34,15 @@ namespace IMS.Plugins.EFCoreSqlServer
         }
 
         public async Task<IEnumerable<ProductTransaction>> GetProductTransactionsAsync(
-            string productName, DateTime? dateFrom, DateTime? dateTo, ProductTransactionType? transactionType, List<string> userIds)
+            string sellOrder, string productName, DateTime? dateFrom, DateTime? dateTo, ProductTransactionType? transactionType, List<string> userIds)
         {
             using var db = contextFactory.CreateDbContext();
             var query = db.ProductTransactions.AsQueryable();
 
+            if (!string.IsNullOrWhiteSpace(sellOrder))
+            {
+                query = query.Where(pt => pt.SONumber.Contains(sellOrder));
+            }
             if (!string.IsNullOrWhiteSpace(productName))
             {
                 query = query.Where(pt => pt.Product.ProductName.Contains(productName));

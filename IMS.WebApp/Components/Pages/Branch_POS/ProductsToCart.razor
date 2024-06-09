@@ -20,7 +20,7 @@
 @*
 @using Microsoft.AspNetCore.Authorization
 @attribute [Authorize(Policy = "Admin")]
-*@
+ *@
 
 
 <h1>Products List - @email</h1>
@@ -73,7 +73,6 @@
                             <td>@product.Quantity</td>
                             <td>
                                 <input type="number" min="1" @bind="quantities[product.ProductID]" class="form-control" />
-                                @* <button @onclick="@(() => AddToCart(product.ProductID))">Add to Cart</button> *@
                             </td>
                         </tr>
                     }
@@ -114,39 +113,6 @@
             quantities[product.ProductID] = 0;
         }
     }
-
-    #region Add To Cart
-    // private async Task AddToCart(int productId)
-    // {
-    //     if (string.IsNullOrEmpty(selectedUserId))
-    //     {
-    //         errorMsg = "No User is Selected!";
-    //         return;
-    //     }
-    //     var product = await ProductRepository.GetProductByIdAsync(productId);
-
-    //     if (product != null)
-    //     {
-    //         if (!quantities.TryGetValue(productId, out var selectedQuantity))
-    //         {
-    //             errorMsg = "No quantity selected for this product!";
-    //             return;
-    //         }
-    //         product.Quantity -= selectedQuantity;
-
-    //         await ProductRepository.UpdateProductAsync(product);
-
-    //         await ShoppingCartService.AddItemToCartAsync(selectedUserId, productId, selectedQuantity);
-
-    //         errorMsg = $"{selectedQuantity} {product.ProductName} added to {selectedUserId}'s cart";
-    //     }
-    //     else
-    //     {
-    //         errorMsg = "Product not found!";
-    //     }
-    //     products = (await ViewProductsByNameUseCase.ExecuteAsync("")).ToList();
-    // }
-    #endregion
 
     private async Task AddAllToCart()
     {

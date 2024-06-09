@@ -23,6 +23,7 @@ namespace IMS.UseCases.Reports
             this.userManager = userManager;
         }
         public async Task<IEnumerable<ProductTransaction>> ExecuteAsync(
+            string sellOrder,
             string productName,
             DateTime? dateFrom,
             DateTime? dateTo,
@@ -40,7 +41,7 @@ namespace IMS.UseCases.Reports
                 userIds = users.Select(u => u.Id).ToList();
             }
 
-            return await productTransactionRepository.GetProductTransactionsAsync(productName, dateFrom, dateTo, transactionType, userIds);
+            return await productTransactionRepository.GetProductTransactionsAsync(sellOrder, productName, dateFrom, dateTo, transactionType, userIds);
 
         }
     }

@@ -1,6 +1,7 @@
 ﻿using IMS.CoreBusiness;
 using IMS.UseCases.PluginInterfaces;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +21,7 @@ namespace IMS.Plugins.EfCoreSqlServer
 
         public async Task AddItemToCartAsync(string userId, int productId, int quantity = 1)
         {
+            #region Before the AddToCart Exception
             var cart = await GetCartByUserIdAsync(userId);
             if (cart == null)
             {
@@ -40,6 +42,9 @@ namespace IMS.Plugins.EfCoreSqlServer
                 cartItem.Quantity += quantity;
             }
             await context.SaveChangesAsync();
+            #endregion
+
+
         }
 
         public async Task<Cart?> GetCartByUserIdAsync(string userId)
@@ -69,5 +74,6 @@ namespace IMS.Plugins.EfCoreSqlServer
                 await context.SaveChangesAsync();
             }
         }
+
     }
 }

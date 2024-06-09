@@ -60,6 +60,11 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
         /// </summary>
         public class InputModel
         {
+
+            //[Required]
+            //[Display(Name = "Username")]
+            //public string Username { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -82,7 +87,7 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
             /// </summary>
             [Display(Name = "Remember me?")]
             public bool RememberMe { get; set; }
-        }
+        }                                                            // Added the Username Property
 
         public async Task OnGetAsync(string returnUrl = null)
         {
@@ -103,6 +108,7 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            //_logger.LogInformation("OnPostAsync called.");  // Add this line
             returnUrl ??= Url.Content("~/");
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
@@ -111,7 +117,9 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                //var result = await _signInManager.PasswordSignInAsync(Input.Username, Input.Password, Input.RememberMe, lockoutOnFailure: false);   // Replaced Input.Email with Input.Username
+
+                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);   // Replaced Input.Email with Input.Username
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
@@ -135,6 +143,6 @@ namespace IMS.WebApp.Areas.Identity.Pages.Account
 
             // If we got this far, something failed, redisplay form
             return Page();
-        }
+        }              // Changed @ 1 place
     }
 }
