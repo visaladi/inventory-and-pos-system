@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Identity;
 using IMS.WebApp.Data;
 using IMS.UseCases;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -31,31 +32,28 @@ builder.Services.AddDbContext<AccountDbContext>(options =>
 builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
     options.SignIn.RequireConfirmedEmail = false;
-}).AddEntityFrameworkStores<AccountDbContext>();
+}).AddRoles<IdentityRole>()
+.AddEntityFrameworkStores<AccountDbContext>();              // Here, this order is critical
 
 builder.Services.AddAuthentication();
 builder.Services.AddAuthorization();
 //builder.Services.AddCascadingAuthenticationState();
 
-//builder.Services.AddDbContext<IMSContext>(options =>
-//{
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));
-//});
 builder.Services.AddDbContextFactory<IMSContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryManagement"));
 });
 
 
+
+
+
 // Add services to the container.
 builder.Services.AddRazorComponents().AddInteractiveServerComponents();
-
 builder.Services.AddRazorPages();
 
 builder.Services.AddTransient<IProductRepository, ProductEFCoreRepository>();
 builder.Services.AddTransient<IProductTransactionRepository, ProductTransactionEFCoreRepository>();
-//builder.Services.AddSingleton<IProductRepository, ProductRepository>();
-//builder.Services.AddSingleton<IProductTransactionRepository, ProductTransactionRepository>();
 
 // Product UseCases
 builder.Services.AddTransient<IViewProductsByNameUseCase, ViewProductsByNameUseCase>();

@@ -1,19 +1,19 @@
 ﻿using IMS.CoreBusiness;
+using IMS.CoreBusiness.DTO;
 using Microsoft.EntityFrameworkCore;
 
 namespace IMS.Plugins.EfCoreSqlServer
 {
     public class IMSContext : DbContext
     {
-
         public IMSContext(DbContextOptions<IMSContext> options) : base(options)
         {
         }
 
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductTransaction> ProductTransactions { get; set; }
-        public DbSet<Cart> Carts { get; set; } // New DbSet for Carts
-        public DbSet<CartItem> CartItems { get; set; } // New DbSet for CartItems
+        public DbSet<Cart> Carts { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -29,7 +29,6 @@ namespace IMS.Plugins.EfCoreSqlServer
                 .HasOne(ci => ci.Product) // Define many-to-one relationship between CartItems and Products
                 .WithMany()
                 .HasForeignKey(ci => ci.ProductId);
-
 
         }
 

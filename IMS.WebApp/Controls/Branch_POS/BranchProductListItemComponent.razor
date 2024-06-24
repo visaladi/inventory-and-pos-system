@@ -20,15 +20,6 @@
         <td>@prod.Quantity</td>
         <td>Rs. @prod.Price.ToString()</td>
         <td>
-            @* @if (await UserManager.IsSignedInAsync()) *@
-            @* @if (SignInManager.IsSignedIn())
-        {
-        <button @onclick="@(() => AddToCart(prod.ProductID, 1))">Add to Cart</button>
-        }
-        else
-        {
-        <span>Please Sign In to Add Items</span>
-        } *@
             <button type="button" class="btn btn-primary" @onclick="AddToCart(prod.ProductID, 1)">Add to Cart</button>
 
         </td>
@@ -55,43 +46,5 @@
         {
             // Handle scenario where user is not signed in (e.g., display message)
         }
-
-
-        // var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        // if (authState.User.Identity.IsAuthenticated)
-        // {
-        //     var email = authState.User.Identity?.Name; // Assuming 'Name' holds the user's email
-        //     await shoppingCartService.AddItemToCartAsync(email, productId, quantity);
-        // }
-        // else
-        // {
-        //     // Handle scenario where user is not signed in (e.g., display message)
-        // }
-
-
-
-        // var user = await UserManager.GetUserAsync(HttpContext.Current.User); // Assuming HttpContext is accessible
-        // if (user != null)
-        // {
-        //     var email = user.Email; // Assuming 'Email' property holds user email
-        //     await shoppingCartService.AddItemToCartAsync(email, productId, quantity);
-        // }
-        // else
-        // {
-        //     // Handle scenario where user is not signed in (e.g., display message)
-        // }
-
-
-
-        // var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        // if (authState.User.IsAuthenticated)
-        // {
-        //     var email = authState.User.Identity?.Name; // Assuming 'Name' holds the user's email
-        //     await shoppingCartService.AddItemToCartAsync(email, productId, quantity);
-        // }
-        // else
-        // {
-        //     // Handle scenario where user is not signed in (e.g., display message)
-        // }
     }
 }

@@ -1,0 +1,67 @@
+﻿@page "/bpreport_2"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+@using IMS.UseCases.PluginInterfaces
+@using IMS.UseCases
+@using IMS.UseCases.Products
+@using System.Security.Claims
+@using Microsoft.AspNetCore.Components.Authorization
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> UserManager
+
+@inject IProductRepository ProductRepository
+@inject IShoppingCartService ShoppingCartService
+@inject IViewProductsByNameUseCase ViewProductsByNameUseCase
+
+<h3>Branch Products Report</h3>
+
+<div class="row">
+    @if (branchProducts != null)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    @foreach (var user in users)
+                    {
+                        if (user.UserName != "Admin")
+                        {
+                            <th>@user.UserName</th>
+                        }
+
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in allProducts)
+                {
+                    <tr>
+                        <td>@product.ProductName</td>
+                        @foreach (var user in users)
+                        {
+                            var branchQty = branchProducts.ContainsKey(user) && branchProducts[user].Any(p => p.ProductID == product.ProductID)
+                            ? branchProducts[user].FirstOrDefault(p => p.ProductID == product.ProductID).BranchQty
+                            : -1; // Use -1 to indicate error or missing data
+                            <td>@branchQty</td>
+                        }
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Loading products...</p>
+    }
+</div>
+
+
+@code {
+    
+
+
+}
